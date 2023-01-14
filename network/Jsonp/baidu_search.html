@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A</title>
+    <style>
+        * {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+            .wrapper {
+                margin: 100px;
+            }
+            input {
+                width: 400px;
+                height: 34px;
+                border: 2px solid #38f;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                padding: 0 10px;
+                outline: none;
+            }
+            ul {
+                display: none;
+                width: 420px;
+                border: 2px solid #38f;
+                border-top: none;
+            }
+
+            ul li {
+                margin-top: 5px;
+                font-size: 14px;
+            }
+            ul li:hover{
+                background: #ddd;
+            }
+
+            ul li a {
+                display: block;
+                color: #595959;
+                padding: 1px 15px;
+                text-decoration: none;
+            }
+        </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <input type="text" />
+        <ul></ul>
+    </div>
+    <!-- <script src="./frame/jquery-3.4.1.js"></script> -->
+    <script>
+    // 仿照百度搜索
+    // 1. 先绑定oninput，每次input发生变化的时候都会获取到
+    // 2. 值获取到之后要发送到百度的后台接口，百度的后台接口就是'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=' + value + '&cb=callback';
+    // value就是我们获取的搜索值，doJson就是我们的回调函数
+    // 3. 发送到百度接口之后，我们的回调函数会拿到一个JSON数据，里面有一个s数组，把数组中的数据逐个放到li当中。
+
+    // 先把input标签获取
+    var oInput = document.getElementsByTagName('input')[0];
+    var oUl = document.getElementsByTagName('ul')[0];
+
+    oInput.oninput = debounce(getUserAction,100,true);
+
+    // 每次输入内容时都触动
+    function getUserAction() {
+        console.log('aaa');
+        if (oInput.value) {
+            // 每次输入的时候都获取一下
+            var value = this.value;
+
+            // 输入内容后，拿到了数据，应该发送到百度的后台文件，需要使用jsonp跨域拿到百度的后台文件
+            var oScript = document.createElement('script');
+            // 百度的一个接口，value是传入的搜索内容，cb等于的是回调函数的名字
+            oScript.src =
+                'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=' +
+                value +
+                '&cb=doJson';
+            document.body.appendChild(oScript);
+            document.body.removeChild(oScript);
+        } else {
+            oUl.style.display = 'none';
+        }
+    };
+    // 我们的回调函数
+    function doJson(data) {
+        console.log(data)
+        var s = data.s; // 获取s数组里面的内容，方便打印到页面
+        var str = '';
+        if (s.length > 0) {
+            // 用forEach给每一个数组加上li，插入到ul中
+            s.forEach(function(ele, index) {
+                // 这个接口是搜索接口，就是百度搜索内容的接口
+                str += '<li><a href=https://www.baidu.com/s?wd=' + ele + '>' + ele + '</a></li>';
+            });
+            oUl.innerHTML = str;
+            oUl.style.display = 'block';
+        } else {
+            oUl.style.display = 'none';
+        }
+    }
+
+
+
+
+    // 防抖函数
+    function debounce(func, time, flag) {
+        var timer = null;
+        var debounced = function() {
+            var _this = this,
+                argu = arguments;
+            clearTimeout(timer);
+            if (flag) {
+                if (!timer) func.apply(_this, argu);
+                timer = setTimeout(function() {
+                    timer = null;
+                }, time)
+            } else {
+                timer = setTimeout(function() {
+                    func.apply(_this, argu);
+                }, time)
+            }
+        }
+        debounced.cancel = function() {
+            clearTimeout(timer);
+            timer = null;
+        }
+        return debounced;
+    }
+    </script>
+</body>
+
+</html>

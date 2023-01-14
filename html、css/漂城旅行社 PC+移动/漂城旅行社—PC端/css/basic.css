@@ -1,0 +1,124 @@
+@charset "utf-8";
+body,h1,h2,h3,ul,ol,form,fieldset,p,figure,a{
+	margin: 0;
+	padding:0;
+	text-decoration: none;
+	list-style: none;
+
+}
+body{
+	background:#fff;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei UI","Microsoft YaHei",HimHei,"宋体",simsun,sans-sans-serif; 
+}
+ul,ol{
+	list-style: outside none none;
+}
+a{
+	text-decoration: none;
+}
+.none{
+	display: none;
+}
+
+#header{
+	width: 100%;
+	min-width:1263px;
+	height: 70px;
+	background-color: #333;
+	box-shadow:0 1px 10px rgba(0,0,0,.3);
+	position: relative;
+	z-index: 9999;
+}
+#header > .center{
+	 width: 1263px;
+	 height: 70px;
+	 /*background: red;*/
+	 margin: 0 auto; 
+}
+#header .center .logo{
+	width: 240px;
+	height: 70px;
+	background-image:url(../img/logo.png);
+	text-indent: -9999px;
+	float: left;
+}
+#header .center .link ul{
+	width: 650px;
+	/*background-color: red;*/
+	float: right;
+	line-height: 70px;
+	color: #eee;
+	height: 70px;
+}
+#header .center .link ul li{
+	float: left;
+	width: 120px;
+	text-align: center;
+}
+#header .center .link ul li a{
+	display: block;
+	color: #eee;
+}
+#header .center .link ul li a:hover,
+#header .center .link ul li.active a{
+	background-color: #000;
+}
+/*头部导航结束*/
+
+.headline{
+	
+	
+}
+
+/*底部*/
+
+#footer{
+	height: 360px;
+	background-color: #222;
+	clear:both;
+	position:relative;
+	top:20px;
+
+}
+#footer .top{
+	width: 1263px;
+	height: 280px;
+	margin: 0 auto;
+	text-align: center;
+
+}
+#footer .top .left{
+	float: left;
+}
+#footer .top .block{
+	width: 410px;
+	height: 280px;
+	display: inline-block;
+	/*background: red;*/
+	text-align: left;
+	color: #ccc;
+	vertical-align: top;
+}
+#footer  h2{
+	font-size: 14px;
+	font-weight:normal;
+	padding: 20px 0 0 20px;
+}
+#footer hr{
+	width: 90%;
+	border: 1px dashed #333;
+}
+#footer ul{
+	font-size: 18px;
+	color: #777;
+	text-indent: 20px;
+	line-height:2;
+}
+#footer .bottom{
+	height: 80px;
+	background-color: #000;
+	line-height: 80px;
+	text-align: center;
+	color: #777;
+	border-top: 1px solid #444;
+}

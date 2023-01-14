@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/dmeo.css" />
+</head>
+
+<body>
+
+
+	<div class="container">
+		<div class="row">
+			<aside class="col-md-3">
+				<div class="panel panel-info">
+					<div class="panel-heading">个人信息</div>
+					<div class="panel-body">
+						<div class="logo">
+							<p><img class="img-responsive img-rounded" src="img/logo.jpg" alt="Long"></p>
+							<h3 class="text-center text-primary"></h3>
+						</div>
+						<address>
+							<p>
+								<span class="glyphicon glyphicon-map-marker v-align"></span>
+								<code class="v-align">河北省邯郸市邯山区</code>
+							</p>
+							<p title="邮政编码">
+								<span class="fa fa-map-signs v-align"></span>
+								<kbd class="v-align">056001</kbd>
+							</p>
+							<p>
+								<span class="glyphicon glyphicon-phone v-align"></span>
+								<span class="v-align">15533323693</span>
+							</p>
+							<p>
+								<span class="glyphicon glyphicon-envelope v-align"> </span>
+								<span class="v-align"><abbr title="电子邮箱">e-mail</abbr>394120024@qq.com</span>
+							</p>
+						</address>
+					</div>
+				</div>
+
+				<!-- 面板2 -->
+
+				<div class="panel panel-info">
+					<div class="panel-heading">个人技能</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-3">
+								<span class="text-muted">HTML5</span>
+							</div>
+							<div class="col-md-9">
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped active" style="width: 95%;">
+										95%
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<span class="text-muted">CSS</span>
+							</div>
+							<div class="col-md-9">
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped active" style="width: 95%;">
+										95%
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<span class="text-muted">JQuery</span>
+							</div>
+							<div class="col-md-9">
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped active" style="width: 1%;">
+										1%
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<span class="text-muted">JS</span>
+							</div>
+							<div class="col-md-9">
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped active" style="width: 50%;">
+										50%
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 面板2 -->
+				<div class="panel panel-info">
+					<div class="panel-heading">联系我</div>
+					<div class="panel-body">
+						<form action="" class="form-horizontal">
+							<div class="form-group">
+								<label for="inputemail" class="col-md-4 control-label">邮箱:</label>
+								<div class="col-md-8">
+									<input type="text" id="inputname" class="form-control" placeholder="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputname" class="col-md-4 control-label">姓名:</label>
+								<div class="col-md-8">
+									<input type="text" id="inputname" class="form-control" placeholder="name">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-12">
+									<button type="submit" class="btn btn-info pull-right">
+										发送
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</aside>
+			<!-- 左边结束 -->
+
+			<!-- 右边开始 -->
+			<section class="col-md-9">
+				<div class="jumbotron">
+					<h3 class="text-info tit">
+						专业技能
+					</h3>
+					<div class="item-list">
+						<h4>PC端</h4>
+						<p class="text-left">
+							参与多个网站的前端设计工作<br>
+							熟练掌握<code>HTML5</code>、<code>Bootstrap</code>、<code>JQuery</code>、<code>等技术</code>等技术。<br>
+							爱好程序设计，喜欢开发自己的小型产品。
+						</p>
+					</div>
+					<div class="item-list">
+						<h4>移动端</h4>
+						<p>
+							熟练使用Bootstrap框架以及框架JQuery 的使用。<br>
+							熟练使用Vue.js、zepto.js等移动框架进行移动页面的开发。<br>
+							掌握移动端编程，会基于流式布局以及 响应式布局开发基于移动端的页面。
+						</p>
+					</div>
+				</div>
+
+
+				<!-- 面板组 手风琴效果 -->
+				<div class="panel-group" id="accordion">
+					<!-- 面板1 -->
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<div class="panel-title">
+								<a href="#pan1" data-toggle="collapse" data-target="#pan1"
+									data-parent="#accordion">项目展示</a>
+							</div>
+						</div>
+						<div class="panel-collapse collapse in" id="pan1">
+							<div class="panel-body">
+								<div class="col-md-4 col-xs-4">
+									<div class="thumbnail">
+										<img src="img/rain.jpg" alt="" class="img-responsive" title="案例1" alt="案例">
+										<div class="caption text-center">
+											<p>
+												<a href="#">雨中漫步</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-xs-4">
+									<div class="thumbnail">
+										<img src="img/shoes.jpg" alt="案例2" title="案例2" class="imgresponsive">
+										<div class="caption text-center">
+											<p>
+												<a href="#">我的滑板鞋</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-xs-4">
+									<div class="thumbnail">
+										<img src="img/Frog.jpg" alt="案例3" title="案例3" class="imgresponsive">
+										<div class="caption text-center">
+											<p>
+												<a href="#">青蛙流浪记</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 面板2 -->
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<div class="panel-title">
+								<a href="#pan1" data-toggle="collapse" data-target="#pan2"
+									data-parent="#accordion">经历学校</a>
+							</div>
+						</div>
+						<div class="panel-collapse collapse" id="pan2">
+							<div class="panel-body">
+								<ul class="list-group">
+									<li class="list-group-item">
+										<div class="row">
+											<div class="col-md-3">2017-2018</div>
+											<div class="col-md-5">河北省邯郸市邯郸领创中等专业学校</div>
+											<div class="col-md-4">中专1年级</div>
+										</div>
+									</li>
+									<li class="list-group-item">
+										<div class="row">
+											<div class="col-md-3">2018-2019</div>
+											<div class="col-md-5">河北省邯郸市邯郸领创中等专业学校</div>
+											<div class="col-md-4">中专2年级</div>
+										</div>
+									</li>
+									<li class="list-group-item">
+										<div class="row">
+											<div class="col-md-3">2019-2020</div>
+											<div class="col-md-5">河北省邯郸市邯郸领创中等专业学校</div>
+											<div class="col-md-4">大专1年级</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 面板3 -->
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<div class="panel-title">
+								<a href="#pan1" data-toggle="collapse" data-target="#pan3"
+									data-parent="#accordion">教育背景</a>
+							</div>
+						</div>
+						<div id="pan3" class="panel-collapse collapse">
+							<div class="panel-body">
+								<table class="table table-striped">
+									<th>时间</th>
+									<th>学校</th>
+									<th>专业</th>
+									<tr>
+										<td>2008——2014</td>
+										<td>磁县阜阳小学</td>
+										<td>小学</td>
+									</tr>
+									<tr>
+										<td>2014——2017</td>
+										<td>磁县来村中学</td>
+										<td>初中</td>
+									</tr>
+									<tr>
+										<td>2017——2020</td>
+										<td>邯郸领创中等专业学校</td>
+										<td>中专</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<div class="container">
+		<footer>
+			<p class="text-center">关注-我的微博</p>
+		</footer>
+	</div>
+
+
+
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

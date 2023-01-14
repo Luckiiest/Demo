@@ -1,0 +1,69 @@
+@charset 'utf-8';
+
+.wrapper {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    border: 2px solid black;
+}
+
+.money {
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 400px;
+    background-color: #fffcf3;
+}
+
+.wallet {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wallet .one {
+    width: 100%;
+    height: 150px;
+    background: orange;
+    transition: transform .5s linear .5s;
+}
+
+.wallet .two {
+    width: 100%;
+    height: 250px;
+    background: red;
+    transition: transform .5s linear .5s;
+}
+
+.wallet .three {
+    position: absolute;
+    top: 115px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100px;
+    height: 70px;
+    border-radius: 50%;
+    background: green;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    transition: opacity .5s linear;
+}
+
+.active-one {
+	transform:translate(0,-100%);
+}
+
+.active-two {
+	transform:translate(0,100%);
+}
+
+.active-three {
+	opacity: 0;
+}

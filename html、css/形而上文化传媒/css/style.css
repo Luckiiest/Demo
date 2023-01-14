@@ -1,0 +1,624 @@
+*{margin:0px;padding:0px;}
+
+body{background:#f3ece1;}
+.cr{clear:both;}
+/*******  头部 ********/
+#header{
+height:525px;
+margin:0px auto;
+}
+
+#top{
+width:1000px;
+height:130px;
+margin:0px auto;
+}
+#name{
+width:379px;
+height:77px;
+float:left;
+margin:40px 0px 0px 30px;
+background:url(../image/name.png);
+}
+#top #call{
+width:222px;
+height:98px;
+float:right;
+margin:30px 0px 0px 30px;
+}
+#call .dianhua{
+width:222px;
+height:40px;
+}
+#call .dianhua p{
+font-size:14px;
+color:#f28d01;
+letter-spacing:3px;
+line-height:23px;
+font-weight:bold;
+}
+#call .tubiao{
+width:175px;
+height:50px;
+float:right;
+margin-top:5px;
+}
+#call .tubiao img{border:0px;}
+/*******  导航 ********/
+.nav{
+width:100%px;
+height:45px;
+background:#f28d01;
+}
+.nav .menu{
+width:1000px;
+height:45px;
+margin:0px auto;
+}
+.nav .menu ul span{
+height:23px;
+float:left;
+margin-top:11px;
+}
+.nav .menu ul li{
+width:115px;
+height:45px;
+text-align:center;
+list-style-type:none;
+float:left;
+}
+.nav .menu ul li a{
+color:#fff;
+font-size:16px;
+line-height:45px;
+text-decoration:none;
+}
+.nav .menu ul li a:hover{display:block;background:url(../image/menu_bg.png) no-repeat bottom center;}
+/*******  幻灯 ********/
+.banner{
+width:1000px;
+height:317px;
+margin:0px auto;
+}
+.banner img{
+width:1000px;
+height:317px;
+border:0px;
+}
+.yinying{
+width:998px;
+height:30px;
+margin:0px auto;
+}
+
+/*******  内容 ********/
+.content{
+width:1000px;
+margin:0px auto;
+margin-top:30px;
+}
+/******* 影视作品 ********/
+.yingshizp{
+width:1000px;
+height:580px;
+}
+/*******  作品标题 ********/
+.yingshizp_biaoti{
+width:1000px;
+height:48px;
+background:#f28d01;
+}
+.yingshizp_biaoti p{
+width:181px;
+height:48px;
+color:#fff;
+font-size:25px;
+line-height:48px;
+text-align:center;
+float:left;
+background:url(../image/biaoti_bg.png);
+}
+.yingshizp_biaoti span{
+font-size:14px;
+color:#fff;
+line-height:48px;
+float:right;
+margin-right:10px;
+}
+.yingshizp_biaoti span a{color:#fff;text-decoration:none;}
+.yingshizp_biaoti span a:hover{color:#fff;text-decoration:underline;}
+.yingshizp_zuopin{
+width:1000px;
+height:240px;
+}
+/*******  作品简介 ********/
+.zuopin_jj{
+width:247px;
+height:245px;
+float:left;
+margin:10px 0px 10px 2px;
+}
+.zuopin_tu{
+width:247px;
+height:164px;
+background:url(../image/beijing.png);
+}
+.zuopin_tu img{
+width:215px;
+height:142px;
+border:0px;
+margin:15px 0px 0px 16px;
+}
+.zuopin_bt{
+width:235px;
+height:18px;
+margin:0px auto;
+background:#f28d01;
+}
+.zuopin_bt p{
+color:#fff;
+font-size:12px;
+line-height:18px;
+text-indent:10px;
+}
+.zuopin_bt p a{color:#fff;text-decoration:none;}
+.zuopin_bt p a:hover{text-decoration:underline;}
+.zuopin_js{
+width:220px;
+height:30px;
+margin:0px auto;
+margin-top:8px;
+}
+.zuopin_js p{
+color:#c2bdb5;
+font-size:12px;
+line-height:16px;
+text-indent:15px;
+}
+.zuopin_xq{
+width:76px;
+height:20px;
+margin-left:15px;
+background:#f28d01;
+margin-top:5px;
+}
+.zuopin_xq p{
+color:#fff;
+font-size:15px;
+line-height:23px;
+text-align:center;
+font-weight:bold;
+}
+.zuopin_xq p a{color:#fff;text-decoration:none;}
+.zuopin_xq p a:hover{text-decoration:underline;}
+/******* 平面作品 ********/
+.pingmianzp{
+width:1000px;
+height:310px;
+margin-top:30px;
+}
+/*******  标题 ********/
+.pingmianzp_biaoti{
+width:1000px;
+height:48px;
+background:#f28d01;
+}
+.pingmianzp_biaoti p{
+width:181px;
+height:48px;
+color:#fff;
+font-size:25px;
+line-height:48px;
+text-align:center;
+float:left;
+background:url(../image/biaoti_bg.png);
+}
+.pingmianzp_biaoti span{
+font-size:14px;
+color:#fff;
+line-height:48px;
+float:right;
+margin-right:10px;
+}
+.pingmianzp_biaoti span a{color:#fff;text-decoration:none;}
+.pingmianzp_biaoti span a:hover{color:#fff;text-decoration:underline;}
+.pingmianzp_zuopin{
+width:1000px;
+height:240px;
+margin-top:10px;
+}
+.pingmian_jj{
+width:247px;
+height:245px;
+float:left;
+margin-left:2px;
+}
+.pingmian_tu{
+width:247px;
+height:164px;
+background:url(../image/beijing.png);
+}
+.pingmian_tu img{
+width:215px;
+height:142px;
+border:0px;
+margin:15px 0px 0px 16px;
+}
+.pingmian_bt{
+width:235px;
+height:18px;
+margin:0px auto;
+background:#f28d01;
+}
+.pingmian_bt p{
+color:#fff;
+font-size:12px;
+line-height:18px;
+text-indent:10px;
+}
+.pingmian_bt p a{color:#fff;text-decoration:none;}
+.pingmian_bt p a:hover{text-decoration:underline;}
+.pingmian_js{
+width:220px;
+height:30px;
+margin:0px auto;
+margin-top:8px;
+}
+.pingmian_js p{
+color:#c2bdb5;
+font-size:12px;
+line-height:16px;
+text-indent:15px;
+}
+.pingmian_xq{
+width:76px;
+height:20px;
+margin-left:15px;
+background:#f28d01;
+margin-top:5px;
+}
+.pingmian_xq p{
+color:#fff;
+font-size:15px;
+line-height:23px;
+text-align:center;
+font-weight:bold;
+}
+.pingmian_xq p a{color:#fff;text-decoration:none;}
+.pingmian_xq p a:hover{text-decoration:underline;}
+/*******  合作伙伴********/
+.hezuo{
+width:1000px;
+height:500px;
+margin-top:35px;
+}
+/******* 标题 ********/
+.hezuo_biaoti{
+width:1000px;
+height:48px;
+background:#f28d01;
+}
+.hezuo_biaoti p{
+width:181px;
+height:48px;
+color:#fff;
+font-size:25px;
+line-height:48px;
+text-align:center;
+float:left;
+background:url(../image/biaoti_bg.png);
+}
+.hezuo_biaoti span{
+font-size:14px;
+color:#fff;
+line-height:48px;
+float:right;
+margin-right:10px;
+}
+.hezuo_biaoti span a{color:#fff;text-decoration:none;}
+.hezuo_biaoti span a:hover{color:#fff;text-decoration:underline;}
+.hezuo_huoban{
+width:1000px;
+height:440px;
+margin-top:10px;
+}
+.hezuo_huoban ul li{
+width:231px;
+height:210px;
+margin:10px 0px 0px 15px;
+}
+.hezuo_huoban ul li{
+list-style-type:none;
+float:left;
+}
+.hezuo_huoban ul li img{
+width:231px;
+height:172px;
+margin:0px 0px 0px 0px;
+border:0px;
+}
+/*******  底部 ********/
+.footer{
+width:100&px;
+height:212px;
+margin-top:10px;
+background:#f28d01;
+}
+.footer_nr{
+width:1000px;
+height:212px;
+margin:0px auto;
+}
+/******* 占用块 ********/
+.footer .tiao{
+width:1000px;
+height:35px;
+}
+.footer .xinxi p{
+color:#fff;
+font-size:14px;
+line-height:30px;
+letter-spacing:3px;
+text-align:center;
+}
+.footer .xinxi p a{color:#fff;text-decoration:none;}
+.footer .xinxi p a:hover{color:#fff;text-decoration:underline;}
+.footer .zixun{
+width:1000px;
+height:20px;
+margin-top:30px;
+}
+.footer .zixun p{
+color:#fff;
+font-size:15px;
+line-height:20px;
+letter-spacing:3px;
+text-align:center;
+}
+.footer .zixun p img{border:0px;}
+
+
+
+
+/************************** 列表 **************/
+.l_shezhi{
+width:780px;
+float:left;
+border:1px solid #e6e3df;
+border-top:0px;
+margin-bottom:10px;
+}
+/*******  作品标题 ********/
+.l_shezhi_biaoti{
+width:780px;
+height:40px;
+background:#f28d01;
+}
+.l_shezhi_biaoti p{
+width:100px;
+height:40px;
+color:#fff;
+font-size:19px;
+line-height:40px;
+text-align:center;
+}
+.l_shezhi_nr{
+width:780px;
+margin:0 auto;
+}
+.l_shezhi_nr ul li{
+width:780px;
+height:121px;
+list-style-type:none;
+border-bottom:1px dashed #bab7b7;
+}
+.l_shezhi_nr ul li .shezhinr{
+width:740px;
+height:101px;
+margin:0 auto;
+margin-top:20px;
+}
+.shezhinr_tu img{
+width:148px;
+height:101px;
+float:left;
+border:0px;
+}
+.shezhinr_zi{
+width:570px;
+float:left;
+margin-left:15px;
+}
+.shezhinr_zi h5 a{color:#000;text-decoration:none;}
+.shezhinr_zi h5 a:hover{color:#000;text-decoration:underline;}
+.shezhinr_zi p{font-size:13px;line-height:20px;text-indent:30px;margin-top:10px;}
+.shezhinr_zi p a{color:#5a5a59;text-decoration:none;}
+.shezhinr_zi p a:hover{color:#5a5a59;text-decoration:underline;}
+.page{
+font-size:14px;
+line-height:50px;
+float:right;
+margin-right:10px;
+}
+.page a{color:#000;text-decoration:none;}
+.page a:hover{color:#000;text-decoration:underline;}
+
+.l_list{
+width:200px;
+float:right;
+border:1px solid #e6e3df;
+border-bottom:5px solid #e6e3df;
+}
+.l_fenlei{
+width:200px;
+}
+.l_fenlei_biaoti{
+width:200px;
+height:40px;
+background:#d32618;
+}
+.l_fenlei_biaoti p{
+width:190px;
+height:40px;
+color:#fff;
+font-size:15px;
+line-height:40px;
+text-indent:30px;
+margin-left:10px;
+background:#f28d01;
+}
+.l_fenlei_nr ul li{
+width:140px;
+height:30px;
+font-size:14px;
+line-height:30px;
+text-indent:15px;
+list-style-type:none;
+margin:10px 0px 0px 20px;
+background:url(../image/li_bg.png);
+}
+.l_fenlei_nr ul li a{color:#595959;text-decoration:none;}
+.l_fenlei_nr ul li a:hover{color:#fff;background:url(../image/li_bg2.png);display:block;}
+
+.l_dongtai{
+width:200px;
+margin-top:10px;
+}
+.l_dongtai_biaoti{
+width:200px;
+height:40px;
+background:#d32618;
+}
+.l_dongtai_biaoti p{
+width:190px;
+height:40px;
+color:#fff;
+font-size:15px;
+line-height:40px;
+text-indent:30px;
+margin-left:10px;
+background:#f28d01;
+}
+.l_dongtai_nr ul li{
+font-size:14px;
+line-height:23px;
+list-style-image:url(../image/li_tb.png);
+margin:5px 0px 0px 25px;
+}
+.l_dongtai_nr ul li a{color:#595959;text-decoration:none;}
+.l_dongtai_nr ul li a:hover{color:#f28d01;}
+.l_dongtai_nr p{
+font-size:14px;
+line-height:25px;
+text-align:center;
+}
+.l_dongtai_nr p a{color:#000;text-decoration:none;}
+.l_dongtai_nr p a:hover{color:#f28d01;text-decoration:underline;}
+
+
+
+
+/************************** 内容 **************/
+
+.n_zhengwen{
+width:780px;
+float:left;
+border:1px solid #e6e3df;
+border-top:0px;
+margin-bottom:10px;
+}
+/*******  作品标题 ********/
+.n_zhengwen_biaoti{
+width:780px;
+height:40px;
+background:#f28d01;
+}
+.n_zhengwen_biaoti p{
+width:100px;
+height:40px;
+color:#fff;
+font-size:19px;
+line-height:40px;
+text-align:center;
+}
+.n_zhengwen_nr{
+width:750px;
+margin:0 auto;
+margin-top:20px;
+}
+.n_zhengwen_nr .bt{
+font-size:18px;
+line-height:30px;
+font-weight:bold;
+}
+.n_zhengwen_nr .timee{
+font-size:12px;
+margin-left:30px;
+}
+.n_zhengwen_nr span p{
+color:#595959;
+font-size:13px;
+line-height:30px;
+text-indent:30px;
+margin:20px 0px 10px 0px;
+}
+.n_zhengwen_nr p{
+color:#595959;
+font-size:14px;
+line-height:30px;
+}
+.n_zhengwen_nr img{
+width:750px;
+height:403px;
+margin:5px 0px 20px 0px;
+}
+
+
+
+
+
+/************************** 字列表 **************/
+.zi_dongtai{
+width:780px;
+float:left;
+border:1px solid #e6e3df;
+border-top:0px;
+margin-bottom:10px;
+}
+/*******  作品标题 ********/
+.zi_dongtai_biaoti{
+width:780px;
+height:40px;
+background:#f28d01;
+}
+.zi_dongtai_biaoti p{
+width:100px;
+height:40px;
+color:#fff;
+font-size:19px;
+line-height:40px;
+text-align:center;
+}
+.zi_dongtai_nr{
+width:750px;
+margin:0 auto;
+margin-top:20px;
+}
+.zi_dongtai_nr ul li{
+font-size:14px;
+line-height:30px;
+border-bottom:1px dashed #bab7b7;
+margin:5px 0px 0px 10px;
+list-style-type:none;
+}
+.zi_dongtai_nr ul li a{color:#000;text-decoration:none;}
+.zi_dongtai_nr ul li a:hover{color:#f28d01;}
+.zi_dongtai_nr ul li span{color:#595959;float:right;}
+.pagee{
+font-size:14px;
+line-height:50px;
+float:right;
+margin-right:10px;
+}
+.pagee a{color:#000;text-decoration:none;}
+.pagee a:hover{color:#000;text-decoration:underline;}

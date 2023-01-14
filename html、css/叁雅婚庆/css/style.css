@@ -1,0 +1,237 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none !important;
+}
+
+.container {
+    padding: 0;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list {
+    padding: 0;
+}
+
+.header .hotline {
+    font-size: 12px;
+    border-bottom: 1px solid rgb(235, 233, 233);
+    text-align: right;
+    padding: 0;
+    margin: 5px 0 0 0;
+    color: #999;
+}
+
+.header .logo {
+    margin: 25px 0 0 0;
+}
+
+.header .logo p {
+    margin: 0;
+    font-size: 24px;
+    color: #908183;
+    text-align: right;
+}
+
+.header .logo p .red {
+    color: #EF4C6A;
+}
+
+.header .logo .marriage {
+    color: #ef4c6a;
+    font-size: 10px;
+    font-weight: bold;
+    display: block;
+    text-align: right;
+}
+
+.header .navbar {
+    background-color: transparent;
+    border: none;
+}
+
+.header .navbar .nav li {
+    padding: 0;
+}
+
+.header .navbar .nav li a {
+    width: 100%;
+    padding: 30px 20px;
+    margin-right: 10px;
+    text-align: center;
+    color: #424242;
+    border-top: 10px solid transparent;
+}
+
+/* .header .navbar .nav li a:hover{
+    background:#EF4664;
+    border-top: 10px solid #FBAAB9;
+    color: #fff;
+} */
+.header .navbar .nav .active {
+    background: #EF4664;
+    border-top: 10px solid #FBAAB9;
+    color: #fff;
+}
+
+.banner {
+    display: inline-block;
+}
+
+.contents {
+    margin: 20px 0 0 0;
+}
+
+.contents .box {
+    margin: 0 auto;
+}
+
+.contents .img {
+    margin-bottom: 15px;
+}
+
+.contents .img img {
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto;
+}
+
+.contents h3,
+.contents p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.contents .img h3 {
+    margin-top: 5px;
+}
+
+.contents .img h3 {
+    font-size: 20px;
+}
+
+.contents .info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.contents .info p {
+    color: #999;
+}
+
+.con-list {
+    margin-bottom: 30px;
+}
+
+/* 婚礼案例 */
+.case {
+    margin: 20px 0 0 0;
+}
+
+.case .tit {
+    border-bottom: 1px solid #ccc;
+    margin: 5px 0 20px 0;
+}
+
+.case .tit h2 {
+    display: inline-block;
+    color: #908183;
+}
+
+.case .tit .case-font {
+    font-size: 14px;
+    color: #908183;
+    margin-left: 5px;
+}
+
+.case .see {
+    float: right;
+    font-size: 14px;
+    color: #908183;
+    line-height: 60px;
+}
+
+.case img {
+    width: 100%;
+}
+
+.case .box-list-1 {
+    margin-bottom: 25px;
+}
+
+.hun-li img {
+    display: block;
+    margin: 40px auto;
+}
+
+.footer{
+    color: #fff;
+}
+.footer a{
+    color: #fff;
+}
+.footer a:hover{
+    color: #f40;
+}
+
+.footer .top {
+    background: #2c2c2c;
+    border-top: 8px solid #ef4664;
+    padding: 20px 0;
+}
+
+.footer .top dl {
+    padding: 0 0 0 40px;
+    display: block;
+    text-align: left;
+}
+
+
+
+.footer .top dl dt {
+    margin: 20px 0;
+}
+
+.footer .top dl dd {
+    margin: 10px 0;
+}
+
+.footer .top .info {
+    /* padding: 0 0 0 55px; */
+}
+
+.footer .top .QR-code{
+    padding: 0 0 0 60px;
+}   
+
+.footer .top img {
+    margin: 20px 0 0 0;
+}
+
+.footer .top p {
+    margin: 2px 0 0 0;
+    font-size: 12px;
+}
+
+.footer .bottom {
+    background: #232323;
+    padding: 20px 0;
+}
+
+.footer .bottom .col-md-5{
+    text-align: center;
+    padding: 0 0 0 40px;
+}
+.footer .bottom .col-md-4{
+    text-align: center;
+}

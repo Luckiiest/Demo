@@ -1,0 +1,468 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+#headline{
+	width: 100%;
+	height: 1263px;
+	height: 300px;
+	background: url(../img/headline.jpg );
+	background: linear-gradient(to right bottom,rgba(0,0,0,0.7),rgba(0,0,0,0)),url(../img/headline.jpg) no-repeat center;
+}
+#headline .center{
+	width: 1263px;
+	height: 300px;
+	margin: 0 auto;
+}
+#headline hgroup{
+	padding: 100px 0 0 320px;
+
+}
+#headline h2{
+	color: #fff;
+	font-size: 36px;
+	letter-spacing: 1px;
+}
+#headline h3{
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+/*banner区域结束*/
+
+#container{
+	width: 1263px;	margin: 30px auto;
+}
+#container .sidebar{
+	width: 340px;
+	/*background-color: #eee;*/
+	float: right;
+	text-align: center;
+}
+#container .sidebox{
+	border: 1px solid #eee;
+	margin: 0 0 10px 0;
+}
+#container .sidebox h2{
+	font-size: 20px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #fafafa;
+	color: #666;
+	text-align: left;
+}
+#container .tag{
+	margin:  10px 0;
+}
+#container .tag li{
+	display: inline-block;
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	margin: 2px 0;
+	background-color:#eee;
+	text-align:left;
+	text-indent:8px;
+}
+#container .tag a{
+	display:block;
+	color:#999;
+}
+#container .tag a:hover{
+	background-color: #458b00;
+	color: #fff;
+}
+#container .figure{
+	margin:10px 0;
+}
+#container figure{
+	display: inline-block;
+	padding: 4px;
+	color: #666;
+}
+#container .box{
+	margin:  10px 0;
+}
+#container .box a{
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	margin: 2px 0;
+	color: #999;
+	text-align:left;
+	text-indent:35px;
+}
+#container .box a.trea1{
+	background:#eee url(../img/trea1.png)no-repeat left 10px center;
+}
+#container .box a.trea2{
+	background:#eee url(../img/trea2.png)no-repeat left 10px center;
+}
+#container .box a.trea3{
+	background:#eee url(../img/trea3.png)no-repeat left 10px center;
+}
+#container .box a.trea4{
+	background:#eee url(../img/trea4.png)no-repeat left 10px center;
+}
+
+#container .list{
+	width: 900px;
+ 	/*background-color: #ccc;*/
+	float: left;
+}
+#container .infor{
+	background-color: #eee;
+	height: 45px;
+	line-height: 45px;
+	margin:0 0 20px 0;
+}
+#container .infor .left{
+	display:inline-block;
+	/*background-color: maroon;*/
+	float: left;
+}
+#container .infor .left li{
+	display: inline-block;
+	background-color: #ccc;
+	width: 150px;
+	height: 43px;
+	line-height: 45px;
+	text-align: center;
+}
+#container .infor .left li:first-child{
+	background-color: #fff;
+	border-top: 2px solid #45b800;
+	position: relative;
+	left: 1px;
+}
+#container .left a{
+	color:#666;
+}
+#container .infor .right{
+	display:inline-block;
+	/*background-color: green;*/
+	padding: 0 20px 0 0;
+	float: right;
+}
+#container .infor .right li{
+	display: inline-block;
+	width: 60px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+}
+#container .infor .right a{
+		padding:3px 8px;
+		color: #999;
+}
+#container .infor .right a.selected,#container ul.right li a:hover{
+	background-color: #458b00;
+	color: #fff;
+}
+#container .tour{
+	width: 908px;
+	padding: 0;
+	margin: 0 0 20px 0;
+	/*background-color: #ccc;*/
+	border: 1px solid #eee;
+	position: relative;
+}
+#container .tour img{
+	float: left;
+}
+#container .tour figcaption{
+	width: 528px;
+	height: 230px;
+	float: right;
+}
+#container .tour figcaption hgroup{
+	width: 300px;
+}
+#container .tour h2{
+	font-size: 24px;
+	font-weight: normal;
+	padding: 10px 0 10px 25px;
+	color: #333;
+}
+#container .tour h3{
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.5;
+	padding: 10px 0 10px 25px;
+	color: #666;
+}
+#container .tour ol{
+	margin:  0 0 0 25px;
+	line-height: 2;
+	color: #666;
+}
+#container .tour mark{
+	background-color: #fff;
+	border: 1px solid #458b00;
+	border-radius: 4px;
+	padding: 0 5px;
+	color: #458b00;
+}
+#container .tour .buy{
+	position: absolute;
+	top: 55px;
+	right: 30px;
+}
+#container .tour .price{
+	font-size: 20px;
+	color: #f60;
+}
+#container .tour .price strong{
+	font-size: 36px;
+}
+#container .tour .price s{
+	font-size: 16px;
+	color: #999;
+}
+#container .tour .reserve{
+	margin:  10px 0 0 0;
+}
+#container .tour .reserve a{
+	display: block;
+	width: 152px;
+	height: 40px;
+	font-size: 20px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	background-color: #f60;
+	border-radius: 4px;
+}
+#container .tour .type{
+	width: 90px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	background-color: #59b200;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#container .tour .disc{
+	width: 52px;
+	height: 52px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: url(../img/disc.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	
+}
+#container .tour .disc span{
+	display: block;
+	transform: rotate(45deg);
+	width: 52px;
+	height: 52px;
+	padding: 5px 0 0 0;
+	text-indent: 7px;
+	font-size: 14px;
+	color: #ff7a4d;
+}
+#container .tour footer{
+	width: 528px;
+	height: 30px;
+	line-height: 30px;
+	color: #666;
+	text-indent: 25px;
+	letter-spacing: 1px;
+	background-color: #fafafa;
+	position: absolute;
+	bottom: 0;
+}
+#container .tour time{
+	color: #458b00;
+}
+#container .more{
+	display:block;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin: 0 auto;
+	border:1px solid #ccc ;
+	background-color: #fafafa;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 18px;
+	color: #666;
+}
+#container .ticket,#container .scenery,#container .about{
+	color: #666;
+	font-size: 20px;
+}
+#container .ticket h2,#container .scenery h2,#container .about h2{
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px dashed #999;
+	padding:  0 0 15px 0;
+	font-size: 30px;
+	font-weight: normal;
+}
+#container .ticket .type{
+	margin: 20px 0 10px 0 ;
+}
+#container .ticket .type mark{
+	color: #fff;
+	background-color: #458b00;
+	padding:5px 8px;
+	border-radius: 5px;
+	margin: 0 10px 0 16px;
+}
+#container .ticket .left{
+	display: inline-block;
+	width: 43%;
+}
+#container .ticket .right{
+	display: inline-block;
+	width: 43%;
+}
+#container .ticket .button{
+	display: inline-block;
+	width: 9%;
+}
+#container .ticket .submit{
+	display: block;
+	width:90px;
+	height:90px;
+	font-size: 20px;
+	line-height: 90px;
+	text-align: center;
+	color: #fff;
+	background-color: #f60;
+	border-radius: 4px;
+	border: none;
+	position: relative;
+	top: -28px;
+	cursor: pointer;
+}
+#container .ticket form p{
+	line-height: 3;
+}
+#container .ticket form input{
+	width: 250px;
+	height: 30px;
+	background-color: #fff;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	color: #666;
+	padding: 5px;
+	margin: 0 0 0 15px;
+	font-size: 18px;
+}
+#container .ticket .new{
+	margin: 20px 0 0 0; 
+}
+#container .ticket .new ul{
+	margin: 20px 0 0 0;
+}
+#container .ticket .new ul li{
+	display: inline-block;
+	padding: 5px 10px;
+}
+#container .ticket .new ul li:first-child{
+	padding-left: 0;
+}
+#container .ticket .new ul li:nth-child(2){
+	background-color: #458b00;
+	color: #fff;
+	border-radius:4px;
+}
+#container .ticket table{
+	border-collapse: collapse;
+	margin: 20px 0 0 0;
+	width: 100%;
+	border: 1px solid #ddd;
+}
+#container .ticket th{
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #ddd;
+}
+#container .ticket td{
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+}
+#container .ticket tr:nth-child(2n){
+	background-color: #fafafa;
+}
+#container .ticket tr:hover{
+	background-color: #eee;
+}
+#container .ticket tr .price{
+	color: #f60;
+}
+#container .ticket .more{
+	color: #666;
+	padding: 10px;
+}
+#container .ticket .reserve{
+	display:inline-block;
+	width: 80px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 20px;
+	color:#fff;
+	background-color:#f60;
+}
+#container .scenery figure{
+	border:1px solid #ddd;
+	display: inline-block;
+	padding:4px;
+	border-radius: 4px;
+	margin: 15px 5px 15px 0;
+	width: 435px;
+	text-align: left;
+	float: left;
+}
+#container .scenery figure figcaption{
+	text-align: center;
+	padding: 5px 0;
+}
+#container .scenery .more{
+	display:inline-block;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin: 0 350px;
+	border:1px solid #ccc ;
+	background-color: #fafafa;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 18px;
+	color: #666;
+} 
+#container .about p{
+	font-size: 20px;
+	color: #666;
+	line-height: 2;
+	margin: 20px 0;
+}
+#container .about .top{
+	margin-bottom: 100px;
+}
+#container .about address{
+	line-height: 1.6;
+	margin: 20px 0;
+	font-style: normal;
+
+}

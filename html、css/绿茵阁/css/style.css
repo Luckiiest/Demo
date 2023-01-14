@@ -1,0 +1,202 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+}
+
+.header {
+    background: #000;
+}
+
+
+.header .logo img {
+    display: block;
+    margin: 0 auto;
+}
+
+.header .nav ul {
+    margin: 0;
+}
+
+.header .nav ul li {
+    padding: 0;
+    position: relative;
+}
+
+.header .nav ul li:hover li>div {
+    display: block;
+}
+
+.ej {
+    position: absolute;
+    width: 100%;
+    color: #ccc;
+    z-index: 999;
+    display: block;
+}
+
+.ej .active {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.ej li {
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.header .nav ul li>a {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0;
+}
+
+.header .nav ul li a:hover {
+    color: #f58507;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.con div {
+    background: #171717;
+    height: 400px;
+}
+
+.introduce {
+    text-align: center;
+    background: #2b2a28;
+    color: #fff;
+}
+
+.tit {
+    width: 100%;
+    margin: 50px 0 40px 0;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.tit span {
+    font-size: 10px;
+    margin: 0;
+    color: #ccc;
+    padding: 0;
+    border-bottom: 1px solid#f58507;
+}
+
+.introduce p {
+    font-size: 14px;
+}
+
+.introduce p.active {
+    padding: 40px 0 50px 0;
+}
+
+.dynamic {
+    background: #171717;
+    text-align: center;
+    color: #fff;
+}
+
+.dynamic .con-box figure img {
+    width: 100%;
+}
+
+.dynamic .con-box {
+    margin: 0 auto;
+    padding: 0 0 10px 0;
+}
+
+.dynamic .con-box .box-wrok {
+    margin-top: 10px;
+}
+
+.dynamic .con-box span,
+.dynamic .con-box p,
+.dynamic .con-box a {
+    display: block;
+    text-align: left;
+}
+
+.dynamic span {
+    color: #999;
+}
+
+.dynamic p:nth-of-type(1) {
+    font-size: 14px;
+    margin: 10px 0 5px 0;
+}
+
+.dynamic p:nth-of-type(2) {
+    font-size: 12px;
+}
+
+.dynamic .con-box figure {}
+
+.dynamic .con-box a {
+    font-size: 14px;
+    margin: 50px 0 0 0;
+    color: #f58507;
+    border: 1px solid #f58507;
+    display: inline-block;
+    float: left;
+    margin: 20px 0 10px 0;
+}
+
+.container,
+.col-md-12 {
+    padding: 0;
+}
+
+.join {
+    background: #2C2C2C;
+    text-align: center;
+    color: #fff;
+    padding: 0 0 50px 0;
+}
+
+.join .box {
+    margin: 0 auto;
+}
+
+.join img {
+    display: block;
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.join .box {
+    padding: 0 0 40px 0;
+}
+
+.footer {
+    padding: 40px 0 40px 0;
+    background: #171717;
+}
+
+.footer dl dt {
+    color: #fff;
+    font-size: 16px;
+    border-bottom: 1px solid rgb(59, 59, 59);
+    margin-bottom: 10px;
+}
+
+.footer dl dd {
+    color: rgb(85, 85, 85);
+    margin: 5px 0 0 0;
+}

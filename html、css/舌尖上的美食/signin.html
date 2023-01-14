@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js登录页面</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		font-family: 黑体;
+	}
+		#sign-in{
+			width: 400px;
+			height: 400px;
+			border: 1px solid black;
+			margin: 0 auto;
+			position: absolute;
+   			top: 50%;
+    		left: 50%;
+    		margin: -300px 0 0 -200px;
+		}
+		#sign-in .list{
+			height:40px;
+		}
+		#sign-in .list ul{
+			height: 40px;
+			width: 400px;
+		}
+		#sign-in ul li{
+			width: 200px;
+			height: 40px;
+			line-height: 40px;
+			font-size: 18px;
+			color: #fff;
+			background-color: #f90;
+			float: left;
+			list-style: none;
+			text-align: center;
+		}
+		#sign-in ul li:hover{
+			background-color: #f70;
+		}
+		.action{
+			background-color: #f70 !important;
+		}
+		#con_one1,#con_one2{
+			text-align: center;
+			margin-top: 50px;
+		}
+		.sign-in-box{
+			width: 400px;
+			margin-top: 20px;
+		}
+		.sign-in-box span{
+			display: inline-block;
+			font-size: 16px;
+			color: #999;
+		}
+		.sign-in-box input{
+			width:250px;
+			height: 30px;
+			border-radius: 2px;
+			outline: none;
+		}
+		.sign-in{
+			margin-top: 30px;
+			width: 150px;
+			height: 40px;
+			border-radius: 6px;
+			border: none;
+			background-color: #f40;
+			outline: none;
+			font-size: 18px;
+			color:#fff;
+			cursor: pointer;
+		}
+		.Tips{
+			font-size: 12px;
+			color: #ccc;
+			margin-top: 10px;
+			margin-right: 10px;
+		}
+		.Return{
+			margin-top: 10px;
+			display: inline-block;
+			width: 400px;
+			font-size: 14px;
+			color: #ccc;
+			text-decoration: none;
+
+		}
+	</style>
+
+	<script type="text/javascript">
+		function setTab(name,cursel,n){
+			for (var i = 1; i <= n; i ++){
+				var menu=document.getElementById(name+i);
+				var con=document.getElementById("con_"+name+i);
+				menu.className=i== cursel?"hover":"";
+				con.style.display=i== cursel?"block":"none";
+			}
+		}
+
+		function signin(){
+			alert("登录成功！")
+		}
+		function zhuce(){
+			alert("注册成功！")
+		}
+
+	</script>
+</head>
+<body>
+
+	<div id="sign-in">
+		<div class="list">
+			<ul>
+				<li class="action" id="one1" onclick="setTab('one',1,2)">登录</li>
+				<li id="one2" onclick="setTab('one',2,2)">注册</li>
+			</ul>
+		</div>
+		<div id="con_one1">
+			<div class="sign-in-box">
+				<input type="text" name="userName" placeholder="请输入用户名">
+			</div>
+			<div class="sign-in-box">
+				<input type="password" name="userName" placeholder="请输入密码">
+			</div>
+			<p class="Tips">温馨提示：忘记密码或账号请联系系统管理员</p>
+			<button class="sign-in" onclick="signin()">登录</button>
+
+			<a href="#" class="Return">返回首页</a>
+		</div>
+
+		<div id="con_one2" style="display: none;">
+			<div class="sign-in-box">
+				<span>注册:</span>
+				<input type="text" name="userName" placeholder="请输入账号">
+			</div>
+			<div class="sign-in-box">
+				<span>密码:</span>
+				<input type="password" name="userName" placeholder="请输入密码">
+			</div>
+			<p class="Tips">温馨提示：忘记密码或账号请联系系统管理员</p>
+			<button class="sign-in" onclick="zhuce()">注册</button>
+
+			<a class="Return" href="index.html">返回首页</a>
+		</div>
+	</div>
+	
+</body>
+</html>

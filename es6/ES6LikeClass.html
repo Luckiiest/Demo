@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        
+        //判断是否以new的方式构造出来的
+        function _classCallCheck(_this,_constructor) {
+            //判断_this沿着原型链寻找，是否可以找到_this,如果不能抛出错误
+            if (!(_this instanceof _constructor)) {
+                throw "TypeError: Class constructor Plane cannot be invoked without 'new'"
+            }
+        }
+        
+        //设置公有属性和静态属性
+        function _defineProperties(target,props) {
+            //Object.defineProperty
+            props.forEach(function(ele) {
+                //ele.key ele.value
+                Object.defineProperty(target,ele.key,{ 
+                    value: ele.value,
+                    writable: true, //可写
+                    configurable: true//可配置
+                })
+            })
+        }
+
+        //处理公有属性和静态属性
+        function _createClass (_constructor,_prototypeProperties,_staticProperties){
+            //如果传_prototypeProperties数组的话，给原型上赋值
+            if (_prototypeProperties) {
+                _defineProperties(_constructor.prototype, _prototypeProperties)
+            }
+            //如果传_staticProperties数组的话，给函数本身上赋值
+            if (_staticProperties) {
+                _defineProperties(_constructor,_staticProperties);
+            }
+        }
+
+        var Plane = (function() {
+            function Plane(name) {
+                //判断是否以new的方式来执行
+                _classCallCheck(this,Plane);
+                //把私有属性 公有属性 静态属性赋给Plane
+                this.name = name || "普通飞机";
+                this.blood = 100;
+            }
+
+            //创建自身属性和静态属性
+            _createClass(Plane,[
+                //自身方法
+                {
+                    key: 'fly',
+                    value: function() {
+                        console.log('fly');
+                    }
+                },
+            ],[
+                //静态属性
+                {
+                    key: 'alive',
+                    value: function() {
+                        return true;
+                    }
+                }
+            ])
+
+            return Plane;
+        }())
+
+        var oP = new Plane("yzl&战斗机");
+
+        //原型继承方法
+        function _inherit(sub,sup) {
+            Object.setPrototypeOf(sub.prototype,sup.prototype);
+        }
+
+        var AttackPlane = (function(Plane) {
+
+            _inherit(AttackPlane,Plane);
+
+            function AttackPlane (name) {
+                _classCallCheck(this,Plane);
+                this.logo = 'lll';
+                var _this = this;
+                var that = Plane.call(this,name);
+                if(typeof that == 'object') {
+                    _this.that;
+                }
+                _this.logo = 'duyi';
+                return _this;
+            };
+            //创建自身属性和静态属性
+            _createClass(AttackPlane,[
+                //自身方法
+                {
+                    key: 'dan',
+                    value: function() {
+                        console.log('biubiubiu');
+                    }
+                },
+            ],[
+                //静态属性
+                {
+                    key: 'alive',
+                    value: function() {
+                        return true;
+                    }
+                }
+            ])
+            return AttackPlane;
+        }(Plane))
+
+        var oAp = new AttackPlane();
+
+    </script>
+</body>
+</html>

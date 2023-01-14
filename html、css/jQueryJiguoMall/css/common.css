@@ -1,0 +1,455 @@
+@charset "utf-8";
+
+
+.header,
+.main,
+.footer {
+    width: 100%;
+}
+
+/*头部*/
+.header::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.inner {
+    width: 1002px;
+    margin: 0 auto;
+}
+
+.header .header-top {
+    height: 74px;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #d4cec2;
+    box-shadow: 0px 0px 5px #cecfcf inside;
+}
+
+.header .header-top .inner {
+    height: 72px;
+}
+
+.header .header-top .inner .logo {
+    float: left;
+    width: 134px;
+    height: 74px;
+    margin-right: 65px;
+}
+
+.header .header-top .inner .logo:hover {
+    animation: fade 1s linear infinite;
+    /*infinite 无限调用*/
+}
+
+.header .header-top .inner .logo h1 {
+    width: 134px;
+    height: 74px;
+    background: url(../img/logonew.png) no-repeat center;
+    background-size: 134px 55px;
+}
+
+.header .header-top .inner .logo h1 a {
+    display: block;
+    width: 134px;
+    height: 74px;
+    text-indent: -3000px;
+}
+
+.header .header-top .inner .nav {
+    float: left;
+    width: 402px;
+    height: 74px;
+}
+
+.header .header-top .inner .nav ul li {
+    float: left;
+    padding-top: 34px;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header .header-top .inner .nav ul li a {
+    color: black;
+}
+
+.header .header-top .inner .nav ul li.active a {
+    color: #ff3a35;
+}
+
+.header .header-top .inner .nav ul li a:hover {
+    color: #ff3a35;
+    text-decoration: none;
+}
+
+.header .header-top .inner .nav ul li:last-child {
+    margin-right: 0;
+}
+
+.header .header-top .inner .search {
+    float: right;
+    margin-top: 25px;
+    margin-right: 15px;
+    color: 30px;
+}
+
+.header .header-top .inner .search i.icon {
+    font-size: 25px;
+}
+
+.header .header-top .inner .search i.icon:hover {
+    font-size: 28px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -ms-transition: all .1s linear;
+}
+
+.header .header-top .inner .login {
+    float: right;
+    width: 50px;
+    height: 30px;
+    border: 1px solid #fa553f;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 2px;
+    color: #fa553f;
+    margin: 21px;
+}
+
+.header .header-top .inner .login:hover {
+    background: #fa553f;
+    color: white;
+    transition: all .3s;
+}
+
+/*轮播*/
+.con {
+    float: left;
+    position: relative;
+    display: block;
+    width: 220px;
+    height: 288px;
+    margin-right: 38px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.con:last-child {
+    margin: 0;
+}
+
+.con .top-tip {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px 8px;
+    border-bottom-left-radius: 6px;
+    z-index: 10;
+}
+
+.con .sf {
+    background: red;
+    color: white;
+}
+
+.con .ty {
+    background: #f7f2ca;
+    color: #cdc295;
+}
+
+.con h2.name {
+    padding: 8px;
+    text-align: center;
+    color: black;
+}
+
+.con img {
+    width: 220px;
+    height: 135px;
+}
+
+.con:hover img,
+.common li:hover img {
+    animation: fade 2s linear infinite;
+}
+
+.con .label {
+    text-align: center;
+}
+
+.con .label span {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.con .label span.red {
+    border: 1px solid #f40;
+}
+
+.con .label span.green {
+    border: 1px solid green;
+}
+
+.con .red {
+    color: #f40;
+}
+
+.con .green {
+    color: green;
+}
+
+.con .sq {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.con .current {
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/*公共部分*/
+.common ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.common ul li {
+    float: left;
+    width: 222px;
+    height: 233px;
+    margin: 0 27px 20px 0;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.common img {
+    width: 220px;
+    height: 130px;
+    border-radius: 6px 6px 0 0;
+}
+
+.common ul li:nth-child(4n+4) {
+    margin-right: 0;
+}
+
+.common ul li .info {
+    padding: 10px;
+    font-size: 12px;
+    height: 94px;
+}
+
+.common ul li .list {
+    background: url(./img/listbg.jpg) no-repeat left bottom;
+}
+
+.common ul li .info .name {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.common ul li .info .left {
+    float: left;
+}
+
+.common ul li .info .right {
+    float: right;
+}
+
+.common ul li .info .right span {
+    padding-left: 15px;
+}
+
+.common ul li .info .right .zan {
+    background: url(./img/zan.png) no-repeat left center;
+}
+
+.common ul li .info .right .reply {
+    background: url(./img/reply.png) no-repeat left center;
+}
+
+.common .inner .nick {
+    color: #999;
+}
+
+.common .inner .price {
+    color: #f40;
+    font-size: 14px;
+}
+
+.common .btn-more {
+    text-align: center;
+    font-size: 14px;
+    padding: 0 0 20px 0;
+}
+
+.common .btn-more a.conMore {
+    color: #f40;
+    padding-left: 20px;
+}
+
+.common .btn-more .cl {
+    background: url(./img/more.png) no-repeat left center;
+}
+
+.common .btn-more .loading {
+    background: url(./img/loading-i con.gif) no-repeat left center;
+}
+
+.common .btn-more .no-more {
+    color: skyblue;
+}
+
+/*底部*/
+.footer {
+    background: #505050;
+    color: #a3a3a3;
+    padding: 40px 0 15px;
+}
+
+.footer a {
+    color: #a3a3a3;
+}
+
+.footer dl {
+	 display: inline-block;
+    float: left;
+    font-size: 13px;
+    padding-left: 22px;
+    line-height: 20px;
+}
+
+.footer dl dt {
+	color: #fff;
+    font-size: 16px;
+    padding-bottom: 25px;
+}
+
+.footer .fix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.footer dl:nth-child(2) dd:last-child {
+    margin-top: 13px;
+}
+
+.footer dl:nth-child(4) dd a {
+    display: inline-block;
+    width: 69px;
+}
+
+.footer dl:nth-child(1) {
+    padding-left: 0;
+}
+
+.footer dl:nth-child(2) {
+    width: 140px;
+}
+
+.footer dl:nth-child(3) {
+    width: 100px;
+}
+
+.footer dl:nth-child(4) {
+    width: 140px;
+}
+
+.footer dl:nth-child(5) {
+    width: 148px;
+}
+
+.footer dl:nth-child(6) {
+    width: 180px;
+}
+
+.footer .copy {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 13px;
+}
+
+#back-top {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 160px;
+	width: 50px;
+	height: 50px;
+	border-radius: 6px;
+	background:rgba(100,100,100,.4) url(./img/back.png) no-repeat center;
+	transition: all .2s linear;
+}
+#back-top:hover {
+	background:rgba(33,33,33,.4) url(./img/back.png) no-repeat center;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+
+.wrap {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.wrap div {
+	width: 20%;
+	flex-grow: 1;
+	display: inline-block;
+}
+
+.wrap div img {
+	width: 100%;
+}
+
+@media screen and (max-width:1000px) {
+	.wrap div {
+		width: 25%;
+	}
+}
+
+@media screen and (max-width:800px) {
+	.wrap div {
+		width: 33.33%;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.wrap div {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width:400px) {
+	.wrap div {
+		width: 100%;
+	}
+}

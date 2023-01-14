@@ -1,0 +1,129 @@
+﻿<!--
+ * @autoAdd: false
+ * @Descripttion: 
+ * @version: 
+ * @Author: Eugene
+ * @Date: 2022-02-10 15:07:31
+ * @LastEditors: Andy
+ * @LastEditTime: 2022-02-10 15:09:05
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            ul li span {
+                display: inline-block;
+                width: 100px;
+                line-height: 50px;
+                text-align: center;
+            }
+            ul li span {
+                display: inline-block;
+                width: 100px;
+                line-height: 50px;
+                text-align: center;
+            }
+
+            ul li span:last-of-type {
+                width: 300px;
+            }
+
+            #button {
+                width: 100px;
+                line-height: 40px;
+                background-color: #bbda2f;
+                color: #fff;
+                outline: none;
+                border: none;
+                margin-left: 200px;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <ul id="container">
+
+        </ul>
+        <button id="button">
+            更改职业
+        </button>
+       
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/snabbdom/0.7.4/snabbdom.js"></script>
+        <script>
+            const oContainer = document.getElementById('container');
+            const oButton = document.getElementById('button');
+            const patch = snabbdom.init([]);
+            const h = snabbdom.h;
+            let vNode = null;
+
+            const dataList = [
+                {
+                    name: 'shan',
+                    age: 18,
+                    profession: '讲师'
+                },
+                {
+                    name: 'jc',
+                    age: 20,
+                    profession: '自称华语最帅男讲师'
+                },
+                {
+                    name: 'cst',
+                    age: 22,
+                    profession: '高手帅'
+                },
+                {
+                    name: 'dxm',
+                    age: 88,
+                    profession: '哪都有他'
+                },
+            ];
+
+
+            function getData(dataList) {
+                const liArr = [];
+
+                dataList.forEach(item => {
+                    const li = h('li',{},[
+                        h('span',{},item.name),
+                        h('span',{},item.age),
+                        h("span",{},item.profession)
+                    ])
+                    liArr.push(li);
+                });
+
+                const newVNode = h("ul#container",{},liArr);
+
+                if(vNode) {
+                    patch(vNode,newVNode);
+                } else {
+                    patch(oContainer,newVNode);
+                }
+
+                vNode = newVNode;
+            }
+
+            getData(dataList);
+
+
+            oButton.onclick = function() {
+                dataList[0].profession = "可能是，，，";
+                dataList[1].profession = "可能是......";
+                dataList[2].profession = "可能是......";
+                dataList[3].profession = "可能是......";
+                getData(dataList);
+            }
+
+        </script>
+    </body>
+</html>

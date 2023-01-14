@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <canvas id="myCanvas" width=300 height=300></canvas>
+
+    <script>
+       var myCanvas = document.getElementById('myCanvas');
+            var ctx = myCanvas.getContext('2d'),
+            w = myCanvas.width,
+            h = myCanvas.height,
+            lastPoint = {},
+            nowPoint = {};
+
+        function init() {
+            ctx.fillStyle = '#ccc';
+            ctx.fillRect(0,0,w,h);
+
+            //新旧像素合并
+            ctx.globalCompositeOperation = 'destination-out';
+
+            var img = new Image();
+            img.src = './text.jpg';
+
+            img.onload = function() {
+                myCanvas.style.background='url('+ img.src +')';
+                myCanvas.addEventListener('mousedown',downFunc,false);
+            }
+        }
+        init();
+        function downFunc(e) {
+            //上一次的鼠标位置
+            lastPoint.x = e.clientX - myCanvas.offsetLeft;
+            lastPoint.y = e.clientY - myCanvas.offsetTop;
+
+            myCanvas.addEventListener('mousemove',moveFunc,false);
+            document.addEventListener('mouseup',upFunc,false);
+        }
+        function moveFunc(e) {
+            //获取鼠标位置
+            nowPoint.x = e.clientX - myCanvas.offsetLeft,
+            nowPoint.y = e.clientY - myCanvas.offsetTop;
+            
+            ctx.beginPath();
+            ctx.fillStyle = 'black';
+
+            //连线，连接断点
+            ctx.lineWidth = '40';
+            ctx.lineCap = 'round';
+            ctx.moveTo(lastPoint.x,lastPoint.y);
+            ctx.lineTo(nowPoint.x,nowPoint.y);
+            ctx.stroke();
+
+            // 画圆
+            ctx.arc(nowPoint.x,nowPoint.y,20,0,Math.PI*2,0);
+            ctx.closePath();
+            ctx.fill();
+
+            //把现在的点赋给上一个点
+            lastPoint.x = nowPoint.x;
+            lastPoint.y = nowPoint.y;
+        }
+
+        function upFunc() {
+            myCanvas.removeEventListener('mousemove',moveFunc,false);
+            document.removeEventListener('mouseup',upFunc,false);
+            clearCanvas();
+        }
+
+        //计算是否刮开70%的区域
+        function clearCanvas() {
+            //获取像素信息
+            var d = ctx.getImageData(0,0,w,h),
+            //所有被刮开的像素的总和
+                c = 0,
+                len = d.data.length;
+            for(var i = 0;i < len;i += 4) {
+                //d.data的值为0，说明被刮开了，c++
+                if(d.data[i] === 0) {
+                    c++;
+                }
+            }
+            //如果刮开的像素信息大于canvas的70%就全部清空
+            if(c > len/4 * 0.7) {
+                ctx.clearRect(0,0,w,h);
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

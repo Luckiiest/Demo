@@ -1,0 +1,171 @@
+.wrapper .banner{
+	width: 960px;
+	height: 180px;
+	border:1px solid #ccc;
+	margin-top: 4px;
+	padding: 2px;
+}
+.wrapper .banner img{
+	width: 960px;
+	height: 180px;
+}
+/*banner结束*/
+
+
+
+.wrapper .content{
+	width: 960px;
+	height: 300px;
+	margin:0 auto;
+	/*border: 1px solid black;*/
+}
+.wrapper .content .box1{
+	float: left;
+	width: 230px;
+	height: 240px;
+	margin-right:15px;
+	background-image:url(../image/jb_bg.jpg);
+	background-size:100% 100%;
+	border:1px solid #ccc;
+}
+.wrapper .content .box1 ul .caption{
+	height: 36px;
+	font-size:14px;
+	font-weight: bold;
+	line-height: 36px;
+	padding-left: 10px;
+	background-image: url(../image/AB_BIAN.JPG);
+	background-repeat: no-repeat;
+	background-size:100%;
+	background-position: bottom;
+}
+.wrapper .content .box1 .list{
+	width: 220px;
+	height: 180px;
+	background-color: #fff;
+	margin-left: 4px;
+}
+.wrapper .content .box1 .list li{
+	height: 30px;
+	line-height: 30px;
+	padding-left: 5px;
+	font-size:12px;
+	font-family: arial;
+	/*font-weight: bold;*/
+}
+.wrapper .content .box1 .list li span{
+	display: inline-block;
+	width: 5px;
+	height: 10px;
+	background-image: url(../image/AB_BIAO.JPG);
+	background-size: 100% 100%;
+	padding-left: 5px;
+	/*line-height: 10px;*/
+}
+.wrapper .content .box1 .list li a{
+	color: #444;
+	padding-left: 5px;
+}
+
+.wrapper .content .box2{
+	float: left;
+	margin-bottom: 15px;
+	width: 710px;
+	height: 280px;
+	/*border: 1px solid black;*/
+}
+
+.wrapper .content .box2 .box-top{
+	width: 720px;
+	height: 18px;
+	/*border:1px solid black;*/
+}
+.wrapper .content .box2 .box-top .zhongxin,
+.wrapper .content .box2 .box-top .xinwen{
+	/*display: inline-block;*/
+	font-size: 16px;
+	font-weight: bold;
+	color: red;
+	/*line-height: 18px;*/
+}
+.wrapper .content .box2 .box-top .zhongxin{
+	color: #000;
+	margin-left: -5px;
+}
+.wrapper .content .box2 .box-top .zhengwen{
+	color: #888;
+	font-size: 12px;
+}
+.wrapper .content .box2 .box-top .lanse{
+	color: #09e;
+	font-size: 12px;
+}
+
+.wrapper .content .box2 .list{
+	width: 710px;
+	height: 260px;
+	/*border: 1px solid black;*/
+}
+.wrapper .content .box2 .list .title{
+	margin-top: 10px;
+    background: #FAF7EE;
+    width: 700px;
+    height: 30px;
+    line-height:30px;
+    border: #CCC solid 1px;
+}
+.wrapper .content .box2 .list .item li,
+.wrapper .content .box2 .list .title li{
+	float: left;
+}
+
+.wrapper .content .box2 .list .item{
+	width:700px;
+	height:30px;
+}
+
+.wrapper .content .box2 .list ul .a{
+	width:280px;
+	height: 30px;
+	margin-left: 15px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #424242;
+	font-family: arial;
+}
+.wrapper .content .box2 .list ul .b{
+	width: 100px;
+	height: 30px;
+	font-size: 12px;
+	font-family: arial;
+	color: #424242;
+	line-height: 30px;
+	text-align: center;
+}
+.wrapper .content .box2 .list ul .c{
+	width:80px;
+	height:30px;
+	font-size: 12px;
+	font-family: arial;
+	color: #424242;
+	line-height: 30px;
+	text-align: center;
+}
+.wrapper .content .box2 .list ul .d{
+	width: 100px;
+	height: 30px;
+	font-size: 12px;
+	font-family: arial;
+	color: #424242;
+	line-height: 30px;
+	text-align: center;
+}
+.wrapper .content .box2 .list ul .e{
+	width: 100px;
+	height: 30px;
+	font-size: 12px;
+	font-family: arial;
+	color: #424242;
+	line-height: 30px;
+	text-align: center;
+}

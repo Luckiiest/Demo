@@ -1,0 +1,517 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/*清除浮动*/
+.celarfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.header {
+    width: 100%;
+}
+
+.header nav {
+    padding: 0.5rem 1.5rem;
+}
+
+.header .top {
+    padding: .5rem 1.5rem;
+    background: #333;
+}
+
+.header .top p {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.header .top .word {
+    float: right;
+}
+
+.header .title {
+    background: #eee;
+    line-height: 5rem;
+}
+
+.header .title p {
+    /*display: inline-block;*/
+    float: left;
+    width: 10rem;
+    height: 5rem;
+}
+
+.header p img {
+    width: 100%;
+    height: 100%;
+}
+
+.header .title ul {
+    float: right;
+}
+
+.header .title ul li {
+    display: inline-block;
+    padding: 0 2rem;
+    border-right: 1px solid #ccc;
+}
+
+.header .title ul li:last-child {
+    border-right: none;
+}
+
+.header .title ul li a {
+    color: black;
+}
+
+@media screen and (max-width:736px) {
+    .header .title p {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .header .title ul {
+        float: none;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .header .title ul li:nth-of-type(1) {
+        display: none;
+    }
+}
+
+/*内容区域*/
+.main {
+    width: 100%;
+}
+
+
+/*top区域*/
+.main-top {
+    width: 100%;
+    background: #333;
+}
+
+.main-top .main-top-cont {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-top p {
+    display: inline-block;
+    padding: .6rem 1rem;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.main-top .more {
+    float: right;
+}
+
+
+.main-top .more a {
+    color: #fff;
+}
+
+.main-top p mark {
+    background: #fff;
+    color: #6a5b5b;
+    border-radius: .2rem;
+    padding: .1rem .3rem;
+}
+
+
+/* 轮播图区域 */
+.lbt {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.slider-list {
+    width: 100%;
+    height: 30rem;
+}
+
+.slider-list .slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    padding: 0 10rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider-list .slider:nth-of-type(1) {
+    background-image: url('../img/bg-1.jpg');
+}
+
+.slider-list .slider:nth-of-type(2) {
+    display: none;
+    background-image: url('../img/bg-2.jpg');
+}
+
+.slider-list .slider:nth-of-type(3) {
+    display: none;
+    background-image: url('../img/bg-3.jpg');
+}
+
+.slider-list .slider .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    3 color: #fff;
+}
+
+.slider-list .slider .title h2 {
+    color: #fff;
+}
+
+.slider-list .slider .title p {
+    font-size: 1.6rem;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    color: #fff;
+}
+
+.slider-list .slider:nth-of-type(1) .title p {
+    font-size: 2rem;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5rem;
+    width: 100%;
+}
+
+.slider-btn:after {
+    content: '';
+    clear: both;
+}
+
+.slider-btn .left-btn {
+    float: left;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 2rem;
+    background-image: url('../img/left-btn.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slider-btn .right-btn {
+    float: right;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 2rem;
+    background-image: url('../img/right-btn.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slider-order {
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.slider-order ul {
+    display: inline-block;
+
+}
+
+.slider-order ul li {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #666;
+    margin-right: 2rem;
+}
+
+.slider-order ul li:last-of-type {
+    margin-right: 0;
+}
+
+.slider-order ul li.active {
+    background: #fff;
+}
+
+
+/*feature区域*/
+.feature {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.feature .item {
+    flex-grow: 1;
+    margin-right: 1.5rem;
+    text-align: center;
+}
+
+.feature .item:last-child {
+    margin-right: 0;
+}
+
+.feature .item h3 {
+    display: inline-block;
+    color: skyblue;
+}
+
+.feature .item p {
+    display: inline-block;
+    color: #999;
+    text-align: left;
+    margin-left: .5rem;
+    vertical-align: middle;
+}
+
+
+@media screen and (max-width: 736px) and (min-width:420px) {
+    .feature .item h3 {
+        display: block;
+        text-align: center;
+    }
+
+    .feature p {
+    	display: block;
+    	text-align: center;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .feature .item {
+    	width: 100%;
+    	margin:1rem 1rem;
+    }
+}
+
+/* 产品 */
+.product {
+    display: flex;
+    width: 90%;
+    margin: 2rem auto;
+    box-shadow: 0 0 4px #ccc;
+    border-top: 2px solid #2d78f4;
+    background: #f5f9fa;
+}
+
+.product .pro-title {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    color: #635c51;
+}
+
+.product .pro-title h2 {
+    margin-top: 5rem;
+    font-size: 2.4rem;
+}
+
+.product .pro-title p {
+    margin-top: 1rem;
+}
+
+.product .pro-cont {
+    display: inline-block;
+    width: 80%;
+    background: #fff;
+}
+
+.product .pro-cont .pro-item {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    line-height: 8rem;
+}
+
+.product .pro-cont .pro-item div {
+    border-left: 1px solid #eee;
+}
+
+.product .pro-cont .pro-item .pre-item-title {
+    width: 30%;
+}
+
+.product .pro-cont .pro-item .pre-item-title h3 {
+    text-align: center;
+}
+
+.product .pro-cont .pro-item .pre-item-info {
+    width: 50%;
+    font-size: 0;
+}
+
+.product .pro-cont .pro-item .pre-item-info p {
+    font-size: 1.4rem;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+.product .pro-cont .pro-item .pre-item-info p span {
+    font-size: 3rem;
+    width: 100%;
+    color: #2d78f4;
+}
+
+.product .pro-cont .pro-item .pre-item-info p span i {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.product .pro-cont .pro-item .buy {
+    width: 20%;
+}
+
+.product .pro-cont .pro-item .buy a {
+    display: block;
+    width: 90%;
+    margin: 2rem auto;
+    line-height: 4rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2d78f4;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 736px) {
+	.product {
+		flex-wrap: wrap;
+	}
+	.product .pro-title {
+	    width: 100%;
+	    color: #635c51;
+	}
+	.product .pro-title h2 {
+	    margin-top: 2rem;
+	}
+	.product .pro-title p {
+	    margin: 2rem 0;
+	}
+
+	.product .pro-cont {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.product .pro-cont .pro-item .pre-item-title {
+		width: 39%;
+		float: left;
+	}
+	.product .pro-cont .pro-item .pre-item-info {
+		width: 60%;
+		float: right;
+	}
+	.product .pro-cont .pro-item .buy  {
+		width: 100%;
+	}
+	.product .pro-cont .pro-item {
+		flex-wrap: wrap;
+	}
+}
+
+/* .footer */
+.footer {
+    width: 100%;
+    border-top: 2px solid #ccc;
+    padding: 3rem 0;
+}
+
+.footer .footer-cont {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer .footer-cont p {
+    width: 20%;
+    margin-right: 2rem;
+}
+
+.footer .footer-cont p img {
+    width: 100%;
+}
+
+.footer .footer-cont ul {
+    width: 20%;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+.footer .footer-cont ul:last-child {
+    margin-right: 0;
+}
+
+.footer .footer-cont ul li {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+.footer .footer-cont ul li.title {
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+@media screen and (max-width: 736px) {
+	.footer .footer-cont p {
+		display: none;
+	}
+
+	.footer .footer-cont ul {
+		width: 25%;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.footer {
+		padding: 0;
+	}
+	.footer .footer-cont {
+		flex-wrap: wrap;
+	}
+	.footer .footer-cont ul {
+		width: 100%;
+		text-align: center;
+		margin: 1rem 0;
+	}
+}
+
+
+footer {
+    text-align: center;
+    width: 100%;
+    padding: 3rem 0;
+    background: #eee;
+    color: #aaa;
+}

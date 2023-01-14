@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+	background: #000;
+	font-size: 0;
+}
+
+.wrapper {
+	width: 100%;
+}
+
+.wrapper li {
+	display: inline-block;
+	width: 25%;
+	padding: 3px;
+	box-sizing:border-box;
+	overflow: hidden;
+	opacity: 0;
+}
+
+.wrapper li img {
+	width: 100%;
+}
+
+.show {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+}
+
+.show img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+}

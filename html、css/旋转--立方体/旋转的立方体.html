@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .wrap{
+        height:300px;
+        width: 300px;
+        border: 1px solid red;
+        margin: 200px auto;
+        position: relative;
+        transform-style: preserve-3d;
+        perspective: 100000px;
+        transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg);
+        animation: zhuan 4s  linear infinite;
+    }
+    .wrap div{
+        height: 300px;
+        width: 300px;
+        text-align: center;
+        font-size: 150px;
+        position: absolute;
+        transition: all 0.8s;
+    }
+    .wrap div p{
+        line-height: 300px;
+    }
+    .yi{
+        transform: translateZ(150px);
+        background: rebeccapurple;
+    }
+    .er{
+        background: yellow;
+        transform: rotateY(180deg) translateZ(150px); 
+    }
+    .san{
+        background: burlywood;
+        transform: rotateY(-90deg) translateZ(150px);
+    }
+    .si{
+        background: lawngreen;
+        transform: rotateY(90deg)  translateZ(150px);
+    }
+    .wu{
+        background: cyan;
+        transform:rotateX(90deg) translateZ(150px);
+    }
+    .liu{
+        background: orangered;
+        transform: rotateX(-90deg) translateZ(150px);
+    }
+    @keyframes zhuan{
+        from{
+            transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg);
+        }to{
+            transform: rotateX(360deg) rotateZ(360deg) rotateY(360deg);
+        }
+    }
+    .wrap:hover .yi{
+        transform:rotateY(0deg) translateZ(400px);
+    }
+    .wrap:hover .er{
+       transform: rotateY(60deg) translateZ(400px); 
+    }
+    .wrap:hover .san{
+        transform: rotateY(120deg) translateZ(400px); 
+    }
+    .wrap:hover .si{
+        transform: rotateY(180deg) translateZ(400px); 
+    }
+    .wrap:hover .wu{
+        transform: rotateY(240deg) translateZ(400px); 
+    }
+    .wrap:hover .liu{
+        transform: rotateY(300deg) translateZ(400px); 
+    }
+</style>
+<body>
+    <div class="wrap">
+        <div class="yi">
+            <p>1</p>
+        </div>
+        <div class="er">
+            <p>2</p>
+        </div>
+        <div class="san">
+            <p>3</p>
+        </div>
+        <div class="si">
+            <p>4</p>
+        </div>
+        <div class="wu">
+            <p>5</p>
+        </div>
+        <div class="liu">
+            <p>6</p>
+        </div>
+    </div>
+</body>
+</html>

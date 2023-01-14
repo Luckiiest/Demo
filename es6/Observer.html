@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="demo">
+    <div id="show"></div>
+
+    <script>
+        var oDiv = document.getElementById('show'),
+            oInput = document.getElementById('demo');
+
+        var oData = {
+            valueObj: {
+                value:'cc'
+            },
+            value: 'duyi'
+        };
+        
+        oInput.oninput = function() {
+            oData.value = this.value;
+        }
+
+        //更新显示函数
+        function upDate() {
+            oDiv.innerText = oData.value;
+            // oDiv.innerText = oData.valueObj.value; //监控对象中的对象
+        }
+        upDate();
+
+
+        //监控对象的某个属性是否发生改变
+        function Observer(data) {
+            //判断是否是对象
+            if(!data || typeof data != 'object') {
+                return data;
+            };
+            //循环判断
+            // for(var prop in data) {}
+            //Object.keys(data)，可以将对象中的每个属性都放到数组中
+            Object.keys(data).forEach(function(key) {
+                defineRective(data,key,data[key]);
+            })
+        }
+
+        //监控函数
+        function defineRective(data,key,val) {
+            //AO
+            Observer(val);
+            Object.defineProperty(data,key,{
+                get () {
+                    return val;
+                },
+                set (newValue) {
+                    if(newValue == val) return;
+                    val = newValue;
+                    upDate();
+                }
+            })
+        }
+
+        Observer(oData);
+
+
+
+
+        //vue，vue中将数组的Function更改了;
+        /* 
+            var arr = []
+            let {push} = Array.prototype;
+            function upData() {
+                console.log('更新');
+            }
+
+            //arr push pop unshift shift slice.....
+            Object.defineProperty(Array.prototype,'push',{
+                value:(function() {
+                    return (...arg) => {
+                        push.apply(arr,arg);
+                        upData();
+                    }
+                }())
+            }); 
+        */
+    </script>
+</body>
+</html>

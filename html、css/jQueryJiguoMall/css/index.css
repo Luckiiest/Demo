@@ -1,0 +1,182 @@
+@charset 'utf-8';
+
+.header .banner {
+	width:100%;
+	height: 300px;
+	background: url(./img/original.jpg) center top no-repeat;
+}
+
+.header .banner .inner {
+	height: 254px;
+	padding-top: 46px;
+	text-align:right;
+	animation: rotateIn .8s linear;
+}
+
+.header .banner .inner h2 {
+	font-size: 34px;
+	margin-bottom: 15px;
+	color: white;
+}
+
+.header .banner .inner .label {
+	margin-bottom: 22px;
+}
+
+.header .banner .inner .label span {
+	display: inline-block;
+	padding: 10px;
+	margin-right: 14px;
+	color: white;
+	background: rgba(255,255,255,.3);
+	border-radius: 2px;
+}
+
+.header .banner .inner .time {
+	color: white;
+	font-size: 18px;
+}
+
+.header .banner .inner .btn {
+	display: inline-block;
+	width: 240px;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	color: white;
+	background: #fe5341;
+	font-size: 24px;
+	margin-top: 20px;
+}
+
+.main .hot-box {
+	width: 100%;
+	height: 380px;
+}
+
+.main .hot-box .inner{
+	height: 380px;
+}
+
+.main .inner .title {
+	height: 70px;
+	line-height: 70px;
+	font-size: 24px;
+}
+
+.main .hot-box .inner .slide-box {
+	position: relative;
+	width: 1002px;
+	height: 288px;
+}
+
+.main .hot-box .inner .slide-box .btn{
+	position: absolute;
+	top: 120px;
+	display: block;
+	width:37px; 
+	height:78px;
+}
+
+.main .hot-box .inner .slide-box .prev {
+	left: -60px;
+	background: url(./img/prev.png);
+}
+
+.main .hot-box .inner .slide-box .next {
+	right: -60px;
+	background: url(./img/next.png);
+}
+
+.main .hot-box .inner .slide-box .hot {
+	width: 1002px;
+	height: 288px;
+	overflow: hidden;
+}
+
+.main .hot-box .inner .slide-box .hot ul {
+	position: relative;
+	width: 3006px;
+	height: 288px;
+}
+
+.main .hot-box .inner .slide-box .hot ul li {
+	float: left;
+	width: 1002px;
+	height: 288px;
+}
+
+.main .report-box {
+	width: 100%;
+	height: 590px;
+	background: #ddd;
+}
+
+.main .report-box .inner {
+	height: 590px;
+}
+
+.main .inner {
+	position: relative;
+}
+
+.main .inner .more {
+	position: absolute;
+	top: 28px;
+	right: 0;
+	color: #f40;
+	font-size: 14px;
+	font-weight: bold;
+	padding-right: 17px;
+	background: url(./img/readMore.png) no-repeat right center;
+}
+
+.main .guide {
+	height: 380px;
+}
+
+.main .guide .inner {
+	height: 380px;
+}
+
+.main .coldplay {
+	background:#ddd;
+}
+
+
+@keyframes rotateIn {
+	0% {
+		transform: translate(800px,-800px);
+	}
+	100% {
+		transform: translate(0,0);
+	}
+}
+
+@-webkit-keyframes rotateIn {
+	0% {
+		transform: translate(800px,-800px);
+	}
+	100% {
+		transform: translate(0,0);
+	}
+}
+
+@-moz-keyframes rotateIn {
+	0% {
+		transform: translate(800px,-800px);
+	}
+	100% {
+		transform: translate(0,0);
+	}
+}
+
+
+@-ms-keyframes rotateIn {
+	0% {
+		transform: translate(800px,-800px);
+	}
+	100% {
+		transform: translate(0,0);
+	}
+}

@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+        <style>
+            .calendar {
+                width: 500px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .data-header {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                line-height: 30px;
+            }
+
+            .prev-month,
+            .next-month {
+                border: 15px solid transparent;
+                width: 0;
+                height: 0;
+                cursor: pointer;
+            }
+
+            .prev-month {
+                border-right-color: #38f;
+            }
+            .next-month {
+                border-left-color: #38f;
+            }
+
+            .show-date {
+                flex: 1;
+                text-align: center;
+                color: #38f;
+            }
+
+            .week-header {
+                display: flex;
+                margin: 10px 0 0 0;
+            }
+
+            .week-header > div {
+                flex: 1;
+                text-align: center;
+                line-height: 30px;
+                background-color: #38f;
+                color: #fff;
+                font-weight: 600;
+            }
+
+            .week-day {
+                width: 100%;
+            }
+            .every-day {
+                display: inline-block;
+                width: 14.28%;
+                line-height: 50px;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            .other-day {
+                color: #ccc;
+            }
+
+            .now-day {
+                background: #38f;
+                color: #fff;
+                font-weight: 600;
+            }
+
+            .active-day:not(.now-day) {
+                color: #38f;
+                border: 2px solid #38f;
+                line-height: 46px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <div class="calendar">
+                <div class="data-header">
+                    <div @click="handlePrev" class="prev-month"></div>
+                    <div class="show-data">{{ `${year}年${month}月${day}日` }}</div>
+                    <div @click="handleNext" class="next-month"></div>
+                </div>
+                <div class="data-content">
+                    <div class="week-header">
+                        <div>日</div>
+                        <div>一</div>
+                        <div>二</div>
+                        <div>三</div>
+                        <div>四</div>
+                        <div>五</div>
+                        <div>六</div>
+                    </div>
+                    <div class="week-day">
+                        <div class="every-day" v-for="item in 42">
+                            <!-- 渲染上月 -->
+                            <div class="other-day" v-if="item - beginDay <= 0">{{item - beginDay + prevDays}}</div>
+
+                            <!-- 渲染本月 -->
+                            <div v-else-if="item - beginDay > 0 && item - beginDay <= curDays" 
+                                :class="{'now-day': `${year}-${month}-${item - beginDay}` == curDate,
+                                         'active-day': `${year}-${month}-${item - beginDay}` == `${year}-${month}-${day}`}" 
+                                @click="handleChoose(item-beginDay)">
+                                {{ item - beginDay }}
+                            </div>
+
+                            <!-- 渲染下个月的日期 -->
+                            <div class="other-day" v-else>{{item - curDays - beginDay}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const vm = new Vue({
+                el: '#app',
+                data: {
+                    year: null,
+                    month: null,
+                    day: null,
+                    curDate: null,
+                },
+                created() {
+                    this.getInitDate();
+                },
+                methods: {
+                    // 获取初始时间
+                    getInitDate() {
+                        const date = new Date();
+                        this.year = date.getFullYear();
+                        this.month = date.getMonth() + 1;
+                        this.day = date.getDate();
+                        this.curDate = `${this.year}-${this.month}-${this.day}`;
+                    },
+                    // 点击其他日期时更改样式
+                    handleChoose(day) {
+                        this.day = day;
+                    },
+                    // 点击显示上一月份
+                    handlePrev() {
+                        if(this.month === 1) {
+                            this.month = 12;
+                            this.year --;
+                        } else {
+                            this.month --;
+                        }
+                    },
+                    // 点击显示下一月份
+                    handleNext() {
+                        if(this.month === 12) {
+                            this.month = 1;
+                            this.year ++
+                        } else {
+                            this.month ++
+                        }
+                    },
+                    /*                   // 根据当月返回当月的天数
+                    getCurDays () {
+                        const month = this.month;
+                        const year = this.year;
+                        // 1、3、5、7、8、10、12月是31天，4、6、9、11月是30天，如果是闰年2月为29天，平年2月为28天
+                        if([1,3,5,7,8,10,12].includes(month)) {
+                            return 31;
+                        } else if([4,6,9,11].includes(month)) {
+                            return 30;
+                        } else {
+                            // 判断闰年，是闰年29天，否则28
+                            if( year % 400 == 0 || (year % 4 == 0 && year % 100 !== 0)  ) {
+                                return 29;
+                            }
+                            return 28;
+                        }
+                    } */
+                },
+                // 计算属性
+                computed: {
+                    // 获取开始日期
+                    beginDay() {
+                        return new Date(this.year, this.month - 1, 1).getDay();
+                    },
+                    // 返回当月份的总天数
+                    curDays() {
+                        return new Date(this.year, this.month, 0).getDate();
+                    },
+                    // 返回上个月的天数
+                    prevDays() {
+                        return new Date(this.year, this.month, 0).getDate();
+                    },
+                },
+            });
+        </script>
+    </body>
+</html>

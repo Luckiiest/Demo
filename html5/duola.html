@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    	svg {
+    		border: 1px solid black;
+    	}
+    	.face {
+    		fill: white;
+    	}
+
+    	.eye{
+    		fill: white;
+    	}
+
+		.line-black {
+			stroke: black;
+		}
+		.fill-blue {
+			fill:#2E87FD;
+		}
+		.mouth {
+			fill: none;
+		}
+		.nose {
+			fill: #FD0100;
+		}
+		.nose-light {
+			fill: white;
+		}
+		.sling {
+			stroke-width: 20px;
+			stroke: red;
+			stroke-linecap: round;
+		}
+		.bell {
+			fill: #cece1b;
+			fill-opacity: .7;;
+		}
+		.body {
+			stroke: black;
+		}
+		.fist {
+			fill: white;
+		}
+		.pocket {
+			fill: white;
+		}
+		.pocket-line {
+			fill: none;
+		}
+		.foot {
+			stroke: black;
+			fill: white;
+		}
+		.foot-y {
+			fill: white;
+		}
+    </style>
+</head>
+<body>
+
+ 
+	<svg width='510' height=510>
+		<!-- 头部蓝色背景 -->
+		<path class='line-black fill-blue head-back' d="M 150 300 A 160 160 0 1 1 350 300"></path>
+		<!-- 脸部白色背景 -->
+		<ellipse rx=130 ry=110 cx=250 cy=220 class="face line-black "></ellipse>
+		<!-- 眼睛-右 -->
+		<ellipse rx=35 ry=45 cx=215 cy=110 class="eye line-black "></ellipse>
+		<!-- 眼睛-左 -->
+		<ellipse rx=35 ry=45 cx=285 cy=110 class="eye line-black "></ellipse>
+		<!-- 眼珠-右 -->
+		<ellipse rx=8 ry=10 cx=225 cy=120></ellipse>
+		<!-- 眼珠-左 -->
+		<ellipse rx=8 ry=10 cx=275 cy=120></ellipse>
+		<!-- 胡须-右 -->
+		<path d="M 150 180 L 210 190" class="line-black "></path>
+		<path d="M 145 205 L 210 205" class="line-black "></path>
+		<path d="M 150 230 L 210 220" class="line-black "></path>
+		<!-- 胡须-左 -->
+		<path d="M 280 190 L 350 180" class="line-black "></path>
+		<path d="M 280 205 L 345 205" class="line-black "></path>
+		<path d="M 280 220 L 350 230" class="line-black "></path>
+		<!-- 嘴巴 -->
+		<line class="mouth line-black " x1=250 y1=165 x2=250 y2=270></line>
+		<path class="mouth line-black " d="M 180 240 A 80 50 0 0 0 325 240"></path>
+		<!-- 鼻子 -->
+		<ellipse class="nose line-black " rx=15 ry=15 cx=250 cy=160></ellipse>
+		<ellipse class="nose-light line-black " rx=5 ry=7 cx=257 cy=155></ellipse>
+		<!-- 身体背景 -->
+		<rect class="body fill-blue" x=150 y=300 width=200 height=170></rect>
+		<!-- 左胳膊 -->
+		<path class="arm fill-blue" d="M 90 290 L 180 330 170 365 90 330 90 290"></path>
+		<ellipse class="line-black fist" rx=22 ry=22 cx=97 cy=312></ellipse>
+		<!-- 右胳膊 -->
+		<path class="arm fill-blue" d="M 320 330 L 410 305 410 340 320 365 320 360"></path>
+		<ellipse class="line-black fist" rx=22 ry=22 cx=410 cy=320></ellipse>
+		<!-- 口袋 -->
+		<path class="pocket" d="M 180 310 A 80 85 0 1 0 320 310"></path>
+		<path class="line-black pocket-line" d="M 200 370 A 40 40 0 1 0 300 370 z"></path>
+		<!-- 挂绳 -->
+		<path class="sling" d="M 150 300 L 350 300"></path>
+		<!-- 铃铛 -->
+		<ellipse class="bell line-black " rx=20 ry=20 cx=250 cy=315></ellipse>
+		<ellipse rx=7 ry=7 cx=250 cy=325></ellipse>
+		<path class="line-black" d="M 250 325 L 250 335"></path>
+		<!-- 脚 -->
+		<ellipse class="foot-y" rx=15 ry=20 cx=255 cy=480></ellipse>
+		<!-- 左脚 -->
+		<ellipse class="foot" rx=60 ry=20 cx=190 cy=480></ellipse>
+		<!-- 右脚 -->
+		<ellipse class="foot" rx=60 ry=20 cx=320 cy=480></ellipse>
+	</svg>	
+
+</body>
+</html>

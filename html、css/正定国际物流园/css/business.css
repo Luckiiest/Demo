@@ -1,0 +1,204 @@
+.wrapper .content{
+	width: 960px;
+	height: 520px;
+	border: 1px solid black;
+	margin:0 auto;
+	margin-top:10px;
+}
+.wrapper .content .content-l{
+	float: left;
+	width: 220px;
+	height: 400px;
+	margin-right: 16px;
+	border: 1px solid black;
+}
+.wrapper .content .content-l .l1{
+	width: 220px;
+	height: 240px;
+	margin-right:15px;
+	background-image:url(../image/jb_bg.jpg);
+	background-size:100% 100%;
+	border:1px solid #ccc;
+}
+.wrapper .content .content-l .l1 ul .caption{
+	height: 36px;
+	font-size:14px;
+	font-weight: bold;
+	line-height: 36px;
+	padding-left: 10px;
+	background-image: url(../image/AB_BIAN.JPG);
+	background-repeat: no-repeat;
+	background-size:100%;
+	background-position: bottom;
+}
+.wrapper .content .content-l .l1 .list{
+	width: 210px;
+	height: 180px;
+	background-color: #fff;
+	margin-left: 4px;
+}
+.wrapper .content .content-l .l1 .list li{
+	height: 30px;
+	line-height: 30px;
+	padding-left: 5px;
+	font-size:12px;
+	font-family: arial;
+	/*font-weight: bold;*/
+}
+.wrapper .content .content-l .l1 .list li span{
+	display: inline-block;
+	width: 5px;
+	height: 10px;
+	background-image: url(../image/AB_BIAO.JPG);
+	background-size: 100% 100%;
+	padding-left: 5px;
+	/*line-height: 10px;*/
+}
+.wrapper .content .content-l .l1 .list li a{
+	color: #444;
+	padding-left: 5px;
+}
+.wrapper .content .content-l .l2{
+	width: 205px;
+	height: 30px;
+	margin-top: 10px;
+	background-image: url(../image/cx_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding-left: 15px;
+	padding-top: 10px;
+	/*border: 1px solid black;*/
+}
+.wrapper .content .content-l .l3{
+	width: 220px;
+	height: 80px;
+	/*border:1px solid #ccc;*/
+}
+.wrapper .content .content-l .l3 ul{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ccc;
+}
+.wrapper .content .content-l .l3 ul .waybill{
+	width: 200px;
+	height: 60px;
+	border:1px solid #ccc;
+	margin: 10px auto;
+}
+.wrapper .content .content-l .l3 ul li.waybill::before{
+	content: "运单号：";
+	font-size: 12px;
+	font-family: arial;
+	padding-left: 5px;
+}	
+.wrapper .content .content-l .l3 ul .waybill input{
+	width: 150px;
+	height: 30px;
+	outline: 0;
+	border: 1px dashed #ccc;
+}
+.wrapper .content .content-l .l3 ul .query{
+	width: 100px;
+	height:26px;
+	float: right;
+	margin-right: 10px;
+	background-image: url("../image/yw_an.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.wrapper .content .content-l .l3 ul .query::before{
+	content: "运单查询";
+	font-size: 14px;
+	font-family: arial;
+	font-weight: bold;
+	color: #f2f2f2;
+	margin-left:20px;
+	line-height: 26px;
+}
+
+
+.wrapper .content .content-r{
+	float: left;
+	width: 720px;
+	height: 500px;
+	/*border: 1px solid black;*/
+}
+.wrapper .content .content-r .box-top{
+	width: 720px;
+	height: 20px;
+	/*border:1px solid black;*/
+}
+.wrapper .content .content-r .box-top .zhongxin,
+.wrapper .content .content-r .box-top .xinwen{
+	/*display: inline-block;*/
+	font-size: 16px;
+	font-weight: bold;
+	color: red;
+	/*line-height: 18px;*/
+}
+.wrapper .content .content-r .box-top .zhongxin{
+	color: #000;
+	margin-left: -8px;
+}
+.wrapper .content .content-r .box-top .zhengwen{
+	color: #888;
+	font-size: 12px;
+}
+.wrapper .content .content-r .box-top .lanse{
+	color: #09e;
+	font-size: 12px;
+}
+.wrapper .content .content-r .box-con{
+	width: 720px;
+	height: 300px;
+	/*border: 1px solid black;*/
+	
+}
+.wrapper .content .content-r .box-con p{
+	font-size: 14px;
+	font-family: arial;
+	margin: 10px;
+	text-indent: 2em;
+}
+.wrapper .content .content-r .box-tab{
+	width: 720px;
+	height: 180px;
+	/*border: 1px solid black;*/
+}
+.wrapper .content .content-r .box-tab tr .t{
+	height: 35px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 35px;
+	text-align: center;
+	background-image: url(../image/lei_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+
+
+/*脚部开始*/
+.wrapper .feet{
+	width: 960px;
+	height: 60px;
+	margin:0 auto;
+	margin-top:10px;
+	border-top:1px solid #888;
+}
+.wrapper .feet .feet-box{
+	width:100%;
+	height:40;
+	margin:0 auto;
+	margin-top:20px;
+}
+.wrapper .feet .feet-box p{
+	width:100%;
+	height:20px;
+	color:#424242;
+	font-size:12px;
+	line-height:20px;
+	text-align:center;
+}
+/*脚部结束*/

@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+h2,
+ul,
+li {
+	margin: 0;
+	list-style: none;
+}
+
+h4 {
+	font-weight: bold;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/* 头部开始 */
+
+#header {
+	margin-top: 20px;
+}
+
+#header .tit {
+	margin: 0 0 10px 0;
+}
+
+
+/* 内容开始 */
+.index-con .cont-top .item-left {
+	padding: 20px;
+	color: #fff;
+	margin: 20px 0 20px 0;
+	transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+}
+
+.index-con .cont-top .item-left:hover {
+	box-shadow: 5px 5px 10px 0px #999;
+	position: relative;
+	z-index: 9999;
+	transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	animation: left 1s infinite;
+	-webkit-animation: left 2s infinite;
+}
+
+@keyframes left {
+	0% {
+		transform: rotate3d(0, 0, 0, 0deg) scale3d(, 1, 1, 1);
+		-webkit-transform: rotate3d(0, 0, 0, 0deg) scale3d(, 1, 1, 1);
+		-moz-transform: rotate3d(0, 0, 0, 0deg) scale3d(, 1, 1, 1);
+		-ms-transform: rotate3d(0, 0, 0, 0deg) scale3d(, 1, 1, 1);
+		-o-transform: rotate3d(0, 0, 0, 0deg) scale3d(, 1, 1, 1);
+	}
+
+	25% {
+		transform: rotate3d(1, 1, 1, 10deg) scale3d(1.1, 1.1, 1.1);
+		-webkit-transform: rotate3d(1, 1, 1, 10deg) scale3d(1.1, 1.1, 1.1);
+		-moz-transform: rotate3d(1, 1, 1, 10deg) scale3d(1.1, 1.1, 1.1);
+		-ms-transform: rotate3d(1, 1, 1, 10deg) scale3d(1.1, 1.1, 1.1);
+		-o-transform: rotate3d(1, 1, 1, 10deg) scale3d(1.1, 1.1, 1.1);
+	}
+
+	50% {
+		transform: rotate3d(1, 1, 1, 10deg) scale3d(0.9, 0.9,0.9);
+		-webkit-transform: rotate3d(1, 1, 1, 10deg) scale3d(0.9, 0.9,0.9);
+		-moz-transform: rotate3d(1, 1, 1, 10deg) scale3d(0.9, 0.9,0.9);
+		-ms-transform: rotate3d(1, 1, 1, 10deg) scale3d(0.9, 0.9,0.9);
+		-o-transform: rotate3d(1, 1, 1, 10deg) scale3d(0.9, 0.9,0.9);
+	}
+
+	75% {
+		transform: rotate3d(1, 1, 1, -10deg) scale3d(1.1, 1.1, 1.1);
+		-webkit-transform: rotate3d(1, 1, 1, -10deg) scale3d(1.1, 1.1, 1.1);
+		-moz-transform: rotate3d(1, 1, 1, -10deg) scale3d(1.1, 1.1, 1.1);
+		-ms-transform: rotate3d(1, 1, 1, -10deg) scale3d(1.1, 1.1, 1.1);
+		-o-transform: rotate3d(1, 1, 1, -10deg) scale3d(1.1, 1.1, 1.1);
+}
+
+	100% {
+		transform: rotate3d(0, 0, 0, 0deg) scale3d(, 1, 1, 1);
+		-webkit-transform: rotate3d(0, 0, 0, 0deg) scale3d(, 1, 1, 1);
+		-moz-transform: rotate3d(0, 0, 0, 0deg) scale3d(, 1, 1, 1);
+		-ms-transform: rotate3d(0, 0, 0, 0deg) scale3d(, 1, 1, 1);
+		-o-transform: rotate3d(0, 0, 0, 0deg) scale3d(, 1, 1, 1);
+	}
+
+}
+
+.index-con .cont-top .item-right {
+	padding: 20px;
+	color: #000;
+	margin: 20px 0 20px 0;
+	transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+}
+
+.index-con .cont-top .item-right:hover {
+	box-shadow: 5px 5px 10px 0px #999;
+	transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	animation: right 1s infinite;
+	-webkit-animation: right 1s infinite;
+}
+
+@keyframes right {
+	0% {
+		transform: translate(0,0);
+		-webkit-transform: translate(0,0);
+		-moz-transform: translate(0,0);
+		-ms-transform: translate(0,0);
+		-o-transform: translate(0,0);
+}
+
+	50% {
+		transform: translate(-5px,-5px);
+		-webkit-transform: translate(-5px,-5px);
+		-moz-transform: translate(-5px,-5px);
+		-ms-transform: translate(-5px,-5px);
+		-o-transform: translate(-5px,-5px);
+}
+
+	100% {
+		transform: translate(0,0);
+		-webkit-transform: translate(0,0);
+		-moz-transform: translate(0,0);
+		-ms-transform: translate(0,0);
+		-o-transform: translate(0,0);
+}
+
+}
+
+
+.index-con .cont-top .blue {
+	background: #2695dc;
+}
+
+.index-con .cont-top .orange {
+	background: #ff6501;
+}
+
+.index-con .cont-top .red {
+	background: #fe1100;
+}
+
+.index-con .cont-top .item-right {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+	margin: 20px 0 20px 0;
+	transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+}
+
+/* 内容结束 */
+
+/* 头部结束 */
+.footer .col-sm-12 .text-center {
+	background: #C0C0C0;
+	color: #fff;
+}
+
+.footer p {
+	padding: 50px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+
+
+
+
+
+
+        
+        
+        <script>
+            //原生Promise特性
+            // executor 同步执行
+            // resolve reject
+            // pending 触发Fulfilled Rejected
+            // let oP = new MyPromise((res, rej) => {
+            //     setTimeout(() => {
+            //         res(1);
+            //     });
+            // });
+            // oP.then((val) => {
+            //     console.log(val,'ok');
+            //     return 1;
+            // },(reason) => {
+            //     console.log(reason,'no');
+            //     return 2;
+            // }).then((val) => {
+            //     console.log(val,'ok2');
+            // },(reason) => {
+            //     console.log(reason,'no2');
+            // })
+             
+
+            //链式操作
+            // oP.then((val) => {
+            //     console.log(val,'ok');
+            //     // return 1;
+            //     throw new Error('1');
+            // },(reason) => {
+            //     console.log(reason,'no');
+            // }).then().then((val) => {
+            //     console.log(val,'空then')
+            // },(reason) => {
+            //     console.log(reason);
+            // });
+
+            // oP.then((val) => {
+            //     console.log(val,'ok');
+            //     return new MyPromise((res,rej) => {
+            //         rej(0);
+            //     })
+            // },(reason) => {
+            //     console.log(reason,'no');
+            // }).then((val) => {
+            //     console.log(val,'空thena')
+            // },(reason) => {
+            //     console.log(reason,'空then1');
+            // });
+
+            //1 ok 0 空then after
+
+            // function test(delay,x) {
+            //     return new MyPromise(function(res,rej) {
+            //         setTimeout(function(){
+            //             rej('no' + x)
+            //         },delay)
+            //     })
+            // }
+
+            /* MyPromise.race([1,2,3]).then(function(val) {
+                console.log(val);
+            },function(reason) {
+                console.log(reason);
+            }) */
+        </script>
+    </body>
+</html>

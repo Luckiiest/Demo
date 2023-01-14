@@ -1,0 +1,370 @@
+@charset "utf-8";
+
+.banner{
+    min-width: 1280px;
+    height:520px;
+
+}
+#myCarousel{
+    min-width:1280px;
+    height:600px;
+    position: absolute;
+    top: -80px;
+    z-index: 0;
+    width: 100%;
+}
+#myCarousel img{
+    width: 100%;
+    height:600px;
+}
+.banner .word{
+    position:relative;
+    left:200px;
+    top:150px;
+    z-index:999;
+    width:400px;
+    color:#fff;
+}
+.banner .word h1{
+    font-weight:bold;
+}
+.banner .word h2{
+    font-size:18px;
+    line-height:30px;
+}
+.banner .word a{
+    margin:30px 0 0 0;
+    width:150px;
+    line-height:50px;
+    text-decoration: none;
+    text-align:center;
+    height:50px;
+    display:block;
+    font-size:18px;
+    background:#fff;
+    color:#424242;
+}
+.search{
+    width: 1280px;
+    height: 80px;
+    margin: 20px auto 0 auto;
+}
+.search .search-box{
+    width: 1280px;
+    height: 80px;
+    border-radius: 50px;
+}
+.search .search-box .right{
+    width: 1280px;
+    height: 80px;
+    float: right;
+    border: 1px solid rgba(90,155,255,0.7);
+    border-radius: 50px;
+}
+.search .search-box .right input{
+    margin: 5px 0 0 40px ;
+    width: 800px;
+    height: 70px;
+    border: none;
+    outline: none;
+    color: #424242;
+    font-size: 18px;
+    float: left;
+}
+.search .search-box .right img{
+    float: right;
+    margin: 15px 20px 0 0;
+    cursor: pointer;
+}
+
+
+#container{
+    width: 100%;
+    margin-top: 30px;
+}
+#container .container{
+    width: 1280px;
+    margin: 0 auto;
+}
+#container .container .index {
+    color: #999999;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+#container .container section{
+    width: 1280px;
+    margin: 0 auto;
+}
+#container .container .index span {
+    cursor: pointer;
+}
+#container .container .index span:last-of-type{
+    cursor: default;
+}
+#container .container .city {
+    margin-bottom: 12px;
+}
+#container .container .label {
+    float: left;
+    margin:0 20px 0 0px;
+    padding:0;
+    line-height:40px;
+    font-weight: bold;
+    color:#333
+}
+#container .container .city .choice-province {
+    width: 140px;
+    margin-right: 25px;
+}
+#container .container .city select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    border-radius: 6px;
+    padding: 6px 10px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAGXRFW…cANhHJqlVASgGIQYL3gYoiYHIoCqGKjwApFqAiC2RxgAADAOjNMfem519OAAAAAElFTkSuQmCC) no-repeat 95% center;
+    border: 1px solid #e9e9e9;
+}
+#container .container option{
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+#container .container .noBorder {
+    border-bottom: none;
+}
+#container .container .district {
+    overflow: hidden;
+    height:40px;
+    line-height:40px;
+}
+#container .container .district1{
+	border-bottom: 1px solid #eaeaea;
+}
+#container .container .district .areaList {
+    float: left;
+}
+#container .container .district .areaList li {
+    cursor: pointer;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#container .container .district .areaList li:hover{
+	color:#ff4000;
+}
+#container .container .active {
+    color: #d91323;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* 内容 */
+#container .container .list .switch {
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+#container .container .list .switch .left {
+    float: left;
+}
+#container .container .list .switch .right {
+    float: right;
+}
+.active {
+    color: #d91323;
+    font-weight: bold;
+    cursor: pointer;
+}
+#container .container .list .switch span:nth-of-type(2){
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.grey {
+    color: #999999;
+}
+.changed {
+    color: #999999;
+    cursor: pointer;
+}
+#container .container element.style {
+    color: #d91323;
+    position: relative;
+    right: -12px;
+    top: -15px;
+}
+#container .container .list .storeList li:nth-of-type(odd) {
+    margin: 0px 12px 12px 0;
+}
+#container .container .list .storeList li {
+    position: relative;
+    cursor: pointer;
+    float: left;
+    border: 2px solid #f5f5f5;
+    width: 630px;
+    box-sizing: content-box;
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: #f5f5f5 1px 0px 5px;
+}
+#container .container .list .storeList li .cover {
+    width: 290px;
+    height: 210px;
+    float: left;
+    margin: 12px;
+}
+#container .container .list .storeList li .store-info {
+    float: left;
+    width: 300px;
+}
+#container .container .list .storeList li .store-info .title {
+    height: 65px;
+}
+#container .container .list .storeList li .store-info .title .storeName {
+    float: left;
+    width: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 21px;
+}
+#container .container .list .storeList li .store-info .title .storeName:hover{
+    color: #ff4000;
+}
+#container .container .list .storeList li .store-info .title .score {
+    float: right;
+    margin-top: 18px;
+}
+#container .container .list .storeList li .store-info p {
+    margin-bottom: 12px;
+}
+#container .container .list .storeList li .store-info .title .score .score_val {
+    color: #ff8439;
+    font-weight: bold;
+    font-size: 18px;
+}
+#container .container .list .storeList li .store-info .title .active {
+    background: url(../image/wujiaoxing.png) no-repeat center center;
+    background-size: 13px 13px;
+}
+.list .storeList li .store-info .title .start {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 8px;
+    float: right;
+}
+#container .container .list .storeList li .store-info .storeAdd {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-image: url(../image/address.png);
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+    padding-left: 26px;
+    margin-bottom: 20px;
+}
+#container .container .list .storeList li .store-info .storeAdd:hover{
+    color: #ff4000;
+}
+#container .container .list .storeList li .store-info .storeTel {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    background-image: url(../image/dianhua.png);
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+    text-decoration: none;
+    padding-left: 26px;
+    margin-bottom: 20px;
+}
+#container .container .list .storeList li .store-info .storeTel:hover{
+    color: #ff4000;
+}
+#container .container .list .storeList li .store-info .num {
+    color: #ff8439;
+    background: url(../image/qiche.png) no-repeat 0px 50%;
+    padding-left: 26px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#container .container .list .storeList li .store-info .sale {
+    width: 100%;
+    height: 20px;
+    background-image: url(../image/cu.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    color: #e8203c;
+    cursor: pointer;
+    font-weight: bold;
+    padding-left: 26px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+}
+/* 侧边栏 */
+.rfixed-box{
+    width: 70px;
+    position: fixed;
+    right: 0;
+    top: 314px;
+    margin-top: -178px;
+    z-index: 399;
+}
+.rfixed-box a{
+    display: block;
+    height: 58px;
+    padding-top: 12px;
+    color: #999;
+    background: #f6f6f6;
+    margin-bottom: 1px;
+    text-align: center;
+}
+.rfixed-box a:hover{
+    color: #999;
+}
+.rfixed-box .icon {
+    display: block;
+    margin: 0 auto 5px;
+    background-image: url(../image/icon-index.png);
+    background-repeat: no-repeat;
+}
+.rfixed-box .fixed-item1 .icon {
+    width: 23px;
+    height: 23px;
+    background-position: -5px -258px;
+}
+.rfixed-box .fixed-item2 .icon {
+    width: 26px;
+    height: 24px;
+    background-position: -2px -299px;
+}
+.rfixed-box .fixed-item3 .icon {
+    width: 25px;
+    height: 24px;
+    background-position: -4px -346px;
+}
+.rfixed-box .fixed-item4 .icon {
+    width: 23px;
+    height: 23px;
+    background-position: -5px -391px;
+}
+.rfixed-box .fixed-item5 .icon {
+    width: 28px;
+    height: 23px;
+    background-position: -2px -440px;
+}

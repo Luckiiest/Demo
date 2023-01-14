@@ -1,0 +1,239 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+a{
+    text-decoration: none!important;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background:#fff;
+    color: #333;
+    font: 14px/1.5 'Microsoft YaHei', '\5B8B\4F53', sans-serif;
+}
+#header{
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width:100%;
+    height: 80px;
+    transition: all 1s;
+    /*background-color: #eee;*/
+}
+#header:hover{
+    background:rgba(0, 0, 0,0.8);
+}
+#header .head{
+    width: 1280px;
+    height: 80px;
+    margin: 0 auto;
+}
+#header .tit{
+    display: block;
+    width: 300px;
+    height: 0;
+    padding-top: 80px;
+    overflow: hidden;
+    font-size: 50px;
+    line-height: 80px;
+    float: left;
+    color: #ccc;
+    letter-spacing: 2px;
+    margin: 0;
+    background: url(../image/logo.png);
+}
+#header .nav{
+    width: 800px;
+    height: 80px;
+    float: right;
+}
+
+#header .nav ul .nav_1{
+    float: left;
+    line-height: 80px;
+    width: 100px;
+    text-align: center;
+    position: relative;
+}
+#header .nav ul .nav_1:hover #nav_box{
+    display: block; 
+    background: rgba(0, 0, 0,0.5)
+}
+#header .nav ul .nav_1 a{
+    color: #999;
+}
+#header .nav ul li .nav_a:hover{
+     color: #fff;
+     text-decoration: none;
+}
+#nav_box{
+    display: none;
+    position: absolute;
+    top: 80px;
+    left:-120px;
+    width:600px;
+    height: 50px;
+}
+#nav_box ul{
+    margin-left:50px;
+}
+#nav_box ul li{
+    width: 133px;
+    float:left;
+    line-height: 50px;
+}
+#nav_box ul li .bg{
+    margin-right: 5px;
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../image/bg-nav-tas.png);
+    margin: 10px 0 0 0;
+}
+#nav_box ul li .bg-2{
+    margin-right: 5px;
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../image/bg-nav-tas.png);
+    background-position:84px 0px;
+    margin: 10px 0 0 0;
+}
+#nav_box ul li .bg-3{
+    margin-right: 5px;
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../image/bg-nav-tas.png);
+    background-position:57px 0px;
+    margin: 10px 0 0 0;
+}
+#nav_box ul li .bg-4{
+    margin-right: 5px;
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../image/bg-nav-tas.png);
+    background-position:30px 0px;
+    margin: 10px 0 0 0;
+}
+#nav_box ul li .nav_b{
+    color: #fff;
+}
+#nav_box ul li .nav_b:hover{
+    color: #ff5000;
+}
+
+/* bannner */
+
+#container .container{
+   	padding:0;
+    /*padding: 0;*/
+}
+
+
+
+}
+.footer {
+    padding-bottom: 36px
+    color:#fff !important;;
+}
+.order-footer{
+    background-color:rgba(0,0,0,0.8);
+}
+.page-width{
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0 0 30px 0;
+}
+.footer .footer-show {
+    box-sizing: border-box;
+    padding-top: 30px;
+    height: 90px;
+    border-bottom: 1px solid #cfcfcf;
+}
+.footer .footer-show > li{
+    display: inline-block;
+    padding-left: 39px;
+    margin-left: 61px;
+    margin-right: 65px;
+    font-size: 16px;
+    height: 34px;
+    line-height: 30px;
+    color: #fff;
+    background: url(../image/ordericon.png) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+}
+.footer .footer-show > li:first-child{
+    background-position: 0 -292px;
+}
+.footer .footer-show > li:nth-child(2){
+    background-position: 0 -344px;
+}
+.footer .footer-show > li:nth-child(3){
+    background-position: 0 -397px;
+}
+.footer .footer-show > li:nth-child(4){
+    background-position: 0 -451px;
+}
+.footer .footer-show > li:last-child{
+    background-position: 0 -502px;
+}
+.footer .footer-link{
+    padding-top: 20px;
+}
+.footer .links, .footer .state{
+    line-height: 30px;
+    margin-left: 60px;
+}
+.footer .links {
+    font-weight: 600;
+    color: #fff;
+}
+.footer .footer-link dl{
+    float: left;
+    width: 220px;
+}
+.footer .footer-link dl.first{
+    margin-left: 60px;
+}
+.footer .footer-link dt{
+    line-height: 42px;
+    color: #fff;
+    font-weight: normal;
+}
+.footer .footer-link dd{
+    line-height: 32px;
+    font-size: 12px;
+}
+.footer .footer-link dd a{
+    color: #fff;
+}
+.footer .links > a{
+    margin-right: 25px;
+}
+.footer .state,.footer .links a{
+    color: #fff;
+}
+.footer .float-right{
+    color: #fff;
+}
+
+.footer .float-right img:last-child{
+    margin: 20px 0 0 20px;
+}
+.footer .float-right img{
+    margin-top:20px;    
+}

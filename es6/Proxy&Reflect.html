@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script>
+        let oData = {
+            val: 'duyi'
+        }
+
+        //代理
+        let oProxy = new Proxy(oData,{
+            //进行参数读写控制
+            //target对象，key属性，value赋的值，receiver代理函数
+            set (target,key,value,receiver) {
+                Reflect.set(target,key,value);
+                upDate();
+            },
+            //target对象，key属性，receiver代理函数
+            get (target,key,receiver) {
+                return Reflect.get(target,key);
+            },
+            //has对应in操作符
+            has (target,key) {
+                return key.indexOf('_') != -1 ? false : key in oData;
+            }
+        });
+
+        console.log('val' in oProxy);
+
+        //读写 控制
+        console.log(oProxy.val);
+        oProxy.val = 10;
+
+        function upDate() {
+            console.log('更新了');
+        }
+    </script>
+</body>
+</html>

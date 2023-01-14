@@ -1,0 +1,99 @@
+.main {
+    overflow: hidden;
+}
+
+.main .title {
+    height: 130px;
+}
+
+.main .title .inner {
+    height: 130px;
+}
+
+.main .title .inner h2 {
+	font-size: 30px;
+	text-align: center;
+	line-height: 130px;
+}
+
+.main>div {
+	width: 100%;
+}
+
+.main .webNav {
+	height: 40px;
+	border: 1px solid #f3f3f3;
+}
+
+.main .webNav .inner {
+	height: 40px;
+	text-align: center;
+}
+
+.main .webNav .inner a {
+	padding: 3px 45px 10px 45px;
+	color: #999;
+	font-size: 20px;
+}
+
+.main .webNav .inner .active {
+	color: #f40;
+	border-bottom: 4px solid #f40;
+}
+
+.main .tabNav {
+	height: 48px;
+}
+
+.main .tabNav .inner {
+	height: 48px;
+}
+
+.main .tabNav .inner ul {
+	padding-left: 236px;
+}
+
+.main .tabNav .inner ul li {
+	float: left;
+	font-size: 18px;
+	line-height: 48px;
+	margin-right: 115px;
+	cursor: pointer;
+	color: #999;
+}
+
+.main .tabNav .inner ul li:last-child,
+.main .tabBox .inner .box .con:nth-child(4n+4) {
+	margin-right: 0;
+}
+
+.main .tabNav .inner ul .active {
+	color: black;
+}
+
+.main .tabBox {
+	overflow: hidden;
+	background:#f7f7f7;
+}
+
+.main .tabBox .inner {
+	overflow: hidden;
+	padding: 20px;
+}
+
+.main .tabBox .inner .box {
+	display: none;
+}
+
+.main .tabBox .inner .show {
+	display: block;
+}
+
+.main .tabBox .inner .box .con {
+	margin-bottom: 20px;
+}
+
+
+.no-more {
+	clear: both;
+}

@@ -1,0 +1,15 @@
+@charset "utf-8";
+section .jumbotron{
+	padding: 20px 60px 48px 60px;
+}
+section .jumbotron .tit{
+	padding: 20px 0;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+footer p{
+	padding:20px ;
+	background: #4d4c4c;
+	color: #fff;
+}

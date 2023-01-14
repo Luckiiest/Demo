@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="demo">;
+    <div id="show"></div>
+
+    <script>
+        var oDiv = document.getElementById('show'),
+            oInput = document.getElementById('demo');
+        
+        var oData = {
+            value: 'du'
+        }
+
+        oInput.oninput = function(){ 
+            oData.value = this.value;
+        }
+
+        function upData() {
+            oDiv.innerText = oData.value;
+        }
+        upData();
+
+
+        function Observer(data) {
+            if(!data || typeof data != 'object') {
+                return data;
+            }
+            // for(var prop in data) {
+            //     defineRective(data,key,data[key])
+            // }
+            Object.keys(data).forEach(function(key) {
+                defineRective(data,key,data[key]);
+            })
+        }
+
+        function defineRective(data,key,val){
+            Observer(val);
+            Object.defineProperty(data,key,{
+                get () {
+                    return val;
+                },
+                set (newValue) {
+                    if(newValue == val) return;
+                    val = newValue;
+                    upData();
+                }
+            })
+        }
+        Observer(oData);
+
+    </script>
+</body>
+</html>

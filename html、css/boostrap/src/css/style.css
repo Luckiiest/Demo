@@ -1,0 +1,75 @@
+.masthead h1 {
+    font-size: 80px;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.masthead {
+    background:linear-gradient(45deg,#020031,#6d3353);
+}
+
+.masthead > a:last-child {
+	color: #9d9d9d;
+}
+
+.masthead p:nth-of-type(1) {
+	color: #fff;
+	margin: 20px;
+}
+
+.page-header {
+	font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    box-sizing: border-box;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #eee;
+    width: 60%;
+    text-align: center;
+    font-weight: 200;
+    display: block;
+    margin: 60px auto 40px;
+}
+.thumbnail {
+	max-width: 310px;
+	margin: 0 auto 20px;
+}
+
+.projects .page-header h2 {
+	text-align: center;
+    box-sizing: border-box;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 42px;
+}
+
+.projects .page-header p {
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    text-align: center;
+    font-weight: 200;
+    box-sizing: border-box;
+    margin: 0 0 10px;
+}
+
+.footer {
+	padding: 30px 0;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 70px;
+}
+
+.footer a {
+	color: #777;
+}
+
+.footer hr {
+	margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}

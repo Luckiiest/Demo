@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#box {
+			width: 500px;
+		    height: 500px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="box"></div>
+
+	<script src="./frame/echarts.js"></script>
+	<script>
+		
+		 var oBox = document.getElementById('box');
+
+		 //入口函数
+		 var myChart = echarts.init(oBox);
+
+		 var option = {
+		 	title: {
+		 		text: 'Echarts 入门实例'
+		 	},
+		 	tooltip:{},
+		 	legend: {
+		 		data: ['销量']
+		 	},
+		 	xAxis: {
+		 		data:['衬衫','羊毛衫','雪纺衫','kuzi ','高跟鞋','袜子']
+		 	},
+		 	yAxis: {},
+		 	series:[{
+		 		name: '销量',
+		 		type: 'bar',
+		 		data: [5,20,36,10,10,20]
+		 	}]
+		 }
+
+		 myChart.setOption(option);
+	</script>
+</body>
+</html>

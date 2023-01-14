@@ -1,0 +1,222 @@
+/*!********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/css/orderdetails.less ***!
+  \********************************************************************************************************************/
+body {
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  font-family: 'microsoft yahei', arial, sans-serif;
+}
+img {
+  border: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+h2 {
+  padding: 0.4rem 0;
+  text-align: center;
+  font-size: 1pc;
+  color: #000;
+  border-bottom: 1px solid #eee;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+b {
+  font-weight: normal;
+}
+em {
+  font-style: normal;
+}
+p {
+  margin: 0;
+}
+address {
+  font-style: normal;
+}
+mark {
+  background: none;
+}
+body {
+  background: #eee;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: #e0e0e0;
+}
+#box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+#box .tab-header {
+  width: 100%;
+  height: 40px;
+  background: #e0e0e0;
+  font-size: 14px;
+  z-index: 20;
+  overflow: hidden;
+}
+#box .tab-header .header-loader {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+#box .tab-header .header-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-left: 1px solid #666;
+  padding-left: 10px;
+}
+#box .header-info {
+  display: flex;
+  width: 90%;
+  border-radius: 6px;
+  background: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#box .header-info div.icon {
+  display: inline-block;
+  width: 20%;
+  height: 40px;
+  margin: 12px 0;
+}
+#box .header-info div.icon svg {
+  width: 100%;
+  height: 100%;
+}
+#box .header-info .info {
+  width: 80%;
+}
+#box .header-info .info p,
+#box .header-info .info address {
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+#box .header-info .info .name_tel {
+  color: #666;
+}
+#box .header-info .info .name_tel mark {
+  font-size: 16px;
+  margin-right: 5px;
+}
+#box .header-info .info .tips {
+  color: #f40;
+  font-weight: bold;
+}
+#box .content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  border-radius: 6px;
+  background: #fff;
+  padding: 15px 20px;
+  margin: 15px;
+  box-sizing: border-box;
+}
+#box .content h2 {
+  width: 100%;
+  padding: 0;
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+#box .content .show-img {
+  width: 30%;
+  height: 90px;
+}
+#box .content .show-img img {
+  width: 100%;
+  height: 100%;
+}
+#box .content .info {
+  width: 70%;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+#box .content .info .title {
+  display: flex;
+  width: 100%;
+  color: #333;
+}
+#box .content .info .title .left {
+  width: 75%;
+  font-size: 14px;
+}
+#box .content .info .title .right {
+  width: 20%;
+  margin-left: 5%;
+  text-align: right;
+  font-size: 12px;
+}
+#box .content .info .title .right .money {
+  font-size: 14px;
+}
+#box .content .info .title .right .number {
+  color: #666;
+}
+#box .content .info .introduction {
+  display: inline-block;
+  font-size: 12px;
+  color: #666;
+  height: 20px;
+  line-height: 20px ;
+  background: #f3f3f3;
+  padding: 0 5px;
+  margin: 5px 0 0 0;
+}
+#box .content .info .tips {
+  display: inline-block;
+  font-size: 12px;
+  color: #f40;
+  background: #fde8e0;
+  padding: 0 5px;
+  margin: 5px 0 0 0;
+}
+#box .footer {
+  display: flex;
+  width: 90%;
+  height: 150px;
+  text-align: right;
+}
+#box .footer p {
+  width: 70%;
+  display: inline-block;
+  line-height: 40px;
+  font-size: 14px;
+  color: #666;
+}
+#box .footer p b {
+  color: #000;
+  font-size: 16px;
+}
+#box .footer p em {
+  color: #f40;
+  font-size: 18px;
+}
+#box .footer .submit {
+  width: 25%;
+  height: 40px;
+  margin-left: 5%;
+  border: none;
+  background: linear-gradient(to bottom left, #f40, #FF7C01);
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+/*# sourceMappingURL=orderdetail.css.map*/

@@ -1,0 +1,95 @@
+@charset 'utf-8';
+
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+.nav {
+	height:28px;
+	width: 100%;
+	min-width: 950px;
+	background: #545652;
+	color: #d5d5d5;
+	font-size: 12px;
+}
+
+.nav a {
+	color: #d5d5d5;
+	line-height: 28px;
+	padding: 0 10px;
+}
+
+.nav li {
+	display: inline-block;
+}
+
+.nav .top-nav-info {
+	float: right;
+}
+
+.nav .top-nav-app {
+	float: right;
+}
+
+
+
+.nav-music {
+	width: 100%;
+	background: #ccc;
+	padding: 20px 0 10px 0;
+}
+
+.nav-music .nav-wrap {
+	position: relative;
+	width: 950px;
+	margin: 0 auto;
+}
+
+.nav-music .nav-wrap::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.nav-music .nav-wrap .nav-logo {
+	float: left;
+	width: 150px;
+	height: 50px;
+}
+
+.nav-music .nav-wrap a {
+	display: inline-block;
+	width: 150px;
+	height: 50px;
+	background:url(http://img3.doubanio.com/dae/accounts/resources/d3e2921/music/assets/lg_music_a12_2.png?s=1) no-repeat;
+}
+
+.nav-music .nav-search {
+	float: left;
+	width: 300px;
+	height: 50px;
+}
+
+.nav-music .nav-search .search {
+	padding: 10px;
+	width: 200px;
+	outline: none;
+	border: none;
+	border-radius: 15px;
+}
+
+.nav-music .nav-search .submit {
+	width: 60px;
+	padding: 10px;
+	outline: none;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.nav-list {
+	position: absolute;
+}

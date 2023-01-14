@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>日历</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<style type="text/css">
+      td:hover{
+      	background-color:#90d7ec;
+        }
+        table:hover{
+        	background:#33a3dc;
+        }
+        font:hover{
+        	color:#fff;
+        }	
+		.calendar{
+			position:relative;
+			top:-550px;
+		}
+</style>
+</head>
+<body background="imges/background1.jpg">
+
+  <!--顶部-->
+    <div id="top">
+   <!-- 头部，这是我的的qq头像图片 -->
+         <div class="shu" title="夜@星辰">
+         <img src="imges/head.jpg">
+         </div>
+         <div>
+            <ul class="inco">
+         <li title="15533323693@163.com"><img src="imges/mailbox.png" alt="邮箱"></li>
+         <li title="邯郸市磁县光路镇尧丰村"><img src="imges/address.png" alt="地址"></li>
+         <li title="394120024"><img src=" imges/qq.png" alt="qq"></li>
+         <li title="yu18303046921"><img src="imges/weixin.png" alt="微信"></li>
+           </ul> 
+         </div>
+ <!--顶部<-->
+       <!--  导航栏部分 -->
+     <div id="navigation">
+         <div>
+            <ul class="words">
+				<li><a href="index.html">我的小家</a></li>
+                <li><a href="calendar.html">我的日历</a></li>
+                <li><a href="photo album..html">我的相册</a></li>
+                <li><a href="music.html">音乐</a></li>
+                <li><a href="Microrecording.html">微记录</a></li>
+                <li><a href="Message Board.html">留言板</a></li>
+            </ul>
+         </div>
+     </div>
+     <!-- 导航栏以下部分 -->
+     <article>
+        <main class="hezi"><!-- 大盒子 -->
+            <div class="xhz">
+            <h2 style="position:relative;top:25px;left:-60px;">个人博客，属于我的万年历</h2><!-- 标题 -->
+            </div>
+        </main>
+            
+        <!-- 右边在文档外部的内容 -->
+        <aside class="l_box">
+            <!-- 好友记录 -->
+            <div class="wjl">
+            <h2>
+            好友记录
+            </h2>
+            <ul>
+                <li class="content"><img src="imges/wangwenlong.jpg" alt="王文龙" title="王文龙"></li>
+                <li class="content"><img src="imges/longwei.jpg" alt="龙伟" title="龙伟"></li>
+                <li class="content"><img src="imges/shenhao.png" alt="沈浩" title="二龙湖浩哥"></li>
+                <li class="content"><img src="imges/zhangjiapeng.jpg" alt="张佳鹏" title="佳鹏"></li>
+                <li class="content"><img src="imges/wangyaozu.jpg" alt="王耀祖" title="王耀祖"></li>
+                <li class="content"><img src="imges/mazhenqian.jpg" alt="马振乾" title="小马"></li>
+            </ul>
+            <div class="search">
+            <form action="index.html" method="post" target="_blank">
+            <input type="text" name="searchfrom w" id="searchfrom" placeholder="请输入关键字词">
+            <input name="submit" class="submit1" value="搜索" type="submit"> 
+            </form>
+            </div>
+            <div class="tuijian w">
+            <h2>我的小说</h2>
+            <ul>
+                <li><a href="https://baike.baidu.com/item/%E5%B8%9D%E9%9C%B8/16077389?fr=aladdin" target="_blank">帝霸</a></li>
+                <li><a href="https://baike.baidu.com/item/%E5%9C%A3%E5%A2%9F" target="_blank">圣墟</a></li>
+                <li><a href="https://baike.baidu.com/item/%E9%81%AE%E5%A4%A9/7572" target="_blank">遮天</a></li>
+                <li><a href="https://baike.baidu.com/item/%E5%A4%AA%E5%88%9D/8627" target="_blank">太初</a></li>
+                <li><a href="https://baike.baidu.com/item/%E5%A4%A7%E7%8E%8B%E9%A5%B6%E5%91%BD" target="_blank">大王饶命</a></li>
+                <li><a href="https://baike.baidu.com/item/%E5%A4%AA%E5%8F%A4%E7%A5%9E%E7%8E%8B/13490178" target="_blank">太古神王</a></li>
+                <li><a href="https://baike.baidu.com/item/%E8%80%81%E8%A1%B2%E8%A6%81%E8%BF%98%E4%BF%97" target="_blank">老衲要还俗</a></li>
+                <li><a href="https://baike.baidu.com/item/%E4%BB%8E%E4%BB%99%E4%BE%A0%E4%B8%96%E7%95%8C%E5%BD%92%E6%9D%A5" target="_blank">从仙侠世界归来</a></li>
+            </ul>
+            </div>
+            <div id="fenlei1" style=""> 
+                <h2>分类</h2>
+                <ul>
+                   	<li><a href="index.html">我的小家</a></li>
+                    <li><a href="calendar.html">我的日历</a></li>
+                    <li><a href="photo album..html">我的相册</a></li>
+                    <li><a href="music.html">音乐</a></li>
+                    <li><a href="Microrecording.html">微记录</a></li>
+                    <li><a href="message Board.html">留言板</a></li>
+                    <li><a href="#">关于自我</a></li>
+                </ul>
+            </div>
+            </div>
+        </aside>
+     </article>
+
+
+<div style="width:700px;height:900px;" class="calendar">
+	<p align="center" style="margin-bottom:10px;" class="js">
+	<span id=localtime></span>
+<script type="text/javascript">
+function showLocale(objD)
+{
+	var str,colorhead,colorfoot;
+	var yy = objD.getYear();
+	if(yy<1900) yy = yy+1900;
+	var MM = objD.getMonth()+1;
+	if(MM<10) MM = '0' + MM;
+	var dd = objD.getDate();
+	if(dd<10) dd = '0' + dd;
+	var hh = objD.getHours();
+	if(hh<10) hh = '0' + hh;
+	var mm = objD.getMinutes();
+	if(mm<10) mm = '0' + mm;
+	var ss = objD.getSeconds();
+	if(ss<10) ss = '0' + ss;
+	var ww = objD.getDay();
+	if  ( ww==0 )  colorhead="<font color=\"#FFFFFF\">";
+	if  ( ww > 0 && ww < 6 )  colorhead="<font color=\"#FFFFFF\">";
+	if  ( ww==6 )  colorhead="<font color=\"#FFFFFF\">";
+	if  (ww==0)  ww="星期日";
+	if  (ww==1)  ww="星期一";
+	if  (ww==2)  ww="星期二";
+	if  (ww==3)  ww="星期三";
+	if  (ww==4)  ww="星期四";
+	if  (ww==5)  ww="星期五";
+	if  (ww==6)  ww="星期六";
+	colorfoot="</font>"
+	str = colorhead + yy + "-" + MM + "-" + dd + " " + hh + ":" + mm + ":" + ss + "  " + ww + colorfoot;
+	return(str);
+}
+function tick()
+{
+	var today;
+	today = new Date();
+	document.getElementById("localtime").innerHTML = showLocale(today);
+	window.setTimeout("tick()", 1000);
+}
+tick();
+</script>
+	</p>
+		
+	<table cellpadding="0" cellspcing="0" border="0" width="700" height="500" align="center" bgcolor="#fff">
+		
+		<thody>
+		<tr align="center">
+		    <td width="100" height="60" ><font color="#FFFFFF" size="+2">日</font><br></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">一</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">二</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">三</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">四</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">五</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">六</font></td>
+		</tr>
+		<tr align="center">
+		    <td width="100" height="60" ><font color="#666666" size="+2">25<br></font><font color="#666666" style="font-size: 7px;">十八</font></td>
+			<td width="100" height="60" ><font color="#666666" size="+2">26<br></font><font color="#666666" style="font-size: 7px;">十九</font></td>
+			<td width="100" height="60" ><font color="#666666" size="+2">27<br></font><font color="#666666" style="font-size: 7px;">二十</font></td>
+			<td width="100" height="60" ><font color="#666666" size="+2">28<br></font><font color="#666666" style="font-size: 7px;">廿一</font></td>
+			<td width="100" height="60" ><font color="#666666" size="+2">29<br></font><font color="#666666" style="font-size: 7px;">廿二</font></td>
+			<td width="100" height="60" ><font color="#666666" size="+2">30<br></font><font color="#666666" style="font-size: 7px;">廿三</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">1<br></font><font color="#666666" style="font-size: 7px;">廿四</font></td>
+		</tr>
+		<tr align="center">
+		    <td width="100" height="60" ><font color="#FFFFFF" size="+2">2<br></font><font color="#666666" style="font-size: 7px;">廿五</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">3<br></font><font color="#666666" style="font-size: 7px;">廿六</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">4<br></font><font color="#666666" style="font-size: 7px;">廿七</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">5<br></font><font color="#666666" style="font-size: 7px;">廿八</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">6<br></font><font color="#666666" style="font-size: 7px;">廿九</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">7<br></font><font color="#666666" style="font-size: 7px;">大雪</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">8<br></font><font color="#666666" style="font-size: 7px;">初二</font></td>
+		</tr>
+		<tr align="center">
+		    <td width="100" height="60" ><font color="#FFFFFF" size="+2">9<br></font><font color="#666666" style="font-size: 7px;">初三</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">10<br></font><font color="#666666" style="font-size: 7px;">初四</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">11<br></font><font color="#666666" style="font-size: 7px;">初五</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">12<br></font><font color="#666666" style="font-size: 7px;">初六</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">13<br></font><font color="#666666" style="font-size: 7px;">初七</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">14<br></font><font color="#666666" style="font-size: 7px;">初八</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">15<br></font><font color="#666666" style="font-size: 7px;">初九</font></td>
+		</tr>
+		<tr align="center">
+		    <td width="100" height="60" ><font color="#FFFFFF" size="+2">16<br></font><font color="#666666" style="font-size: 7px;">初十</font></td>
+		    <td width="100" height="60" ><font color="#FFFFFF" size="+2">17<br></font><font color="#666666" style="font-size: 7px;">十一</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">18<br></font><font color="#666666" style="font-size: 7px;">十二</font></td>
+		    <td width="100" height="60" ><font color="#FFFFFF" size="+2">19<br></font><font color="#666666" style="font-size: 7px;">十三</font></td>
+		    <td width="100" height="60" ><font color="#FFFFFF" size="+2">20<br></font><font color="#666666" style="font-size: 7px;">十四</font></td>
+		    <td width="100" height="60" ><font color="#FFFFFF" size="+2">21<br></font><font color="#666666" style="font-size: 7px;">十五</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">22<br></font><font color="#666666" style="font-size: 7px;">冬至</font></td>
+			</tr>
+		<tr align="center">
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">23<br></font><font color="#666666" style="font-size: 7px;">十七</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">24<br></font><font color="#666666" style="font-size: 7px;">平安夜</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">25<br></font><font color="#666666" style="font-size: 7px;">圣诞节</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">26<br></font><font color="#666666" style="font-size: 7px;">二十</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">27<br></font><font color="#666666" style="font-size: 7px;">廿一</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">28<br></font><font color="#666666" style="font-size: 7px;">廿二</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">29<br></font><font color="#666666" style="font-size: 7px;">廿三</font></td>
+		</tr>
+		<tr align="center">
+		    <td width="100" height="60" ><font color="#FFFFFF" size="+2">30<br></font><font color="#666666" style="font-size:5px;">廿四</font></td>
+			<td width="100" height="60" ><font color="#FFFFFF" size="+2">31<br></font><font color="#666666" style="font-size:5px;">廿五</font></td>
+			<td width="100" height="60" ><font color="#ffffff" size="+2">1<br></font><font color="#666666" style="font-size:5px;">元旦</font></td>
+			<td width="100" height="60" ><font color="#666666" size="+2">2<br></font><font color="#666666" style="font-size:5px;">廿七</font></td>
+			<td width="100" height="60" ><font color="#666666" size="+2">3<br></font><font color="#666666" style="font-size:5px;">廿八</font></td>
+			<td width="100" height="60" ><font color="#666666" size="+2">4<br></font><font color="#666666" style="font-size:5px;">廿九</font></td>
+			<td width="100" height="60" ><font color="#666666" size="+2">5<br></font><font color="#666666" style="font-size:5px;">小寒</font></td>
+		</tr>	
+			</thody>
+	</table>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#box {
+			width: 500px;
+		    height: 500px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="box"></div>
+
+	<script src="./echarts.js"></script>
+	<script src="./jquery-3.4.1.js"></script>
+	<script>
+		
+		 var oBox = document.getElementById('box');
+
+		 //入口函数
+		 var myChart = echarts.init(oBox);
+
+		 var option = {
+		 	title: {
+		 		text: 'Echarts 入门实例'
+		 	},
+		 	tooltip:{},
+		 	legend: {
+		 		data: ['人数']
+		 	},
+		 	//x轴方向数据
+		 	xAxis: {
+		 		data:[]
+		 	},
+		 	//y轴方向数据
+		 	yAxis: {},
+		 	series:[{
+		 		name: '人数',
+		 		type: 'bar',
+		 		data: []
+		 	}]
+		 }
+
+		 //升序排序
+		 function compare(property) {
+		 	return function(a,b){
+		 		var value1 = a[property];
+		 		var value2 = b[property];
+		 		return value1 - value2;
+		 	}
+		 }
+
+		 //添加数据
+		 function getData(d) {
+		 	d.sort(compare('num'));
+		 	d.forEach(function(ele,index) {
+		 		option.xAxis.data[index] = ele.name;
+		 		option.series[0].data[index] = ele.num;
+		 	})
+		 }
+
+		 //ajax请求数据
+		 myChart.showLoading();
+		 $.ajax({
+		 	type:'get',
+		 	url: './data.txt',
+		 	success: function(data) {
+		 		setTimeout(function() {
+		 			myChart.hideLoading();
+		 			getData(JSON.parse(data));
+		 			myChart.setOption(option);
+		 		},1000)
+		 	},
+		 	error:function() {
+		 		conosle.log('数据加载失败');
+		 	}
+		 })
+
+		 //获取点击柱形的参数
+		 myChart.on('click',function(params) {
+		 	if(params.componentType === 'series') {
+		 		if(params.seriesType === 'bar') {
+		 			console.log(params.value);
+		 		}
+		 	}
+		 })
+
+
+
+	</script>
+</body>
+</html>

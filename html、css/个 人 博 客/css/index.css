@@ -1,0 +1,803 @@
+	*{
+		padding: 0px;
+		margin: 0px;
+		list-style-type: none;
+		text-decoration: none;
+        color: #000000;
+	}
+    html{
+        height: 0px;
+    }
+	body{
+		background-size: 100%;
+	}/*背景*/
+	/*顶部*/
+
+	#top{
+        margin:0 auto;
+		width: 1000px;
+		height: 137px;
+		background-color:transparent;
+	}/*顶部*/
+	/*头部的大图片、树*/
+	.shu>img{
+        position: relative;
+        top: 20px;
+		width: 110px;
+		height: 137px;
+        margin: 20px;
+		border-width: 5px;
+		border-style: solid;
+        border-color:#A6FFFF;
+	}/*头部的大图片、树*/
+	/*<!-- 头部四个小图标 -->*/
+	.inco>li{
+        position:relative;
+        top:-60px;
+        left: 150px;
+		margin: 7px;
+        float: left;
+        list-style: none;
+        width: 50px;
+    }/*<!-- 头部四个小图标 -->*/
+    /*导航栏*/
+    #navigation{
+        position:absolute;
+    	width: 1000px;
+    	height: 40px;
+    	margin: 20px;
+    	background-color:#46A3FF;
+    	border-top-right-radius: 6px;
+    	border-top-left-radius: 6px;
+    	border-bottom-right-radius:6px; 
+    	border-bottom-left-radius:6px; 
+    }
+    /*导航栏文字*/
+    .words li{
+        line-height:40px;
+    	width: 165px;
+    	margin: 0px;
+    	padding: 0px;
+    	float: left;
+    	display: inline-block;
+    	text-align: center;
+    	font-size: 22px;
+    	color: #fff;
+    	font-family:黑体；
+    }
+    /*导航栏以下所有*/
+    article{
+        background-color:transparent;
+        position: relative;
+        top: 90px;
+        left: -131px;
+        width: 1000px;
+        margin-left:152px;
+    }
+     /*包括左边所欲*/
+    .box{
+        width: 700px;
+        height: 850px;
+
+    }
+    /*第一个白色方块，介绍自己的*/
+    .box1{
+        width: 700px;
+        height: 300px;
+    }
+    article>.box>.box1>ul{
+        width: 700px;
+        height: 300px;
+        border-top-right-radius: 6px;
+        border-top-left-radius:6px;
+        border-bottom-left-radius:6px;
+        border-bottom-right-radius:6px;
+        background-color: #fff;
+    }
+    article>.box>.box1>ul>li{
+        width:660px;
+        height:260px;
+    }
+    .Little.head{/*头像*/
+        position: relative;
+        top: 20px;
+        left: -85px;
+        width: 60px;
+        height: 70px;
+        margin-right: 20px;
+    }
+     article>.box>.box1>ul>li>h2{/*标题：个人博客，属于我的家*/
+        position: relative;
+        top: -50px;
+        left: 100px;
+        font-family:serif;
+     }
+     .info{ /*一段文字*/
+        position: relative;
+        top: -50px;
+        width:580px;
+        height: 66px;
+        margin-top:10px;
+        margin-bottom:10px;
+        margin-left:100px;
+        margin-right: 0px;
+        color: #314145;
+        font-family:仿宋;
+        font-size: 18px;
+
+     }
+     /*好友的部分照片*/
+     .feed-img>img{
+        position: relative;
+        left: 99px;
+        top: -30px;
+        border:1px solid;
+        margin: 3px;
+        border-color:#000000;
+        border-top-right-radius: 6px;
+        border-top-left-radius:6px;
+        border-bottom-left-radius:6px;
+        border-bottom-right-radius:6px;
+     }
+     .date{
+        /*好友照片的部分信息*/
+        position: relative;
+        left: 25px;
+        top: -25px;
+        width: 580px;
+        height: 19px;
+        margin-left:80px;
+     }
+     .date1{
+        margin-right:25px;
+        margin-left:30px;
+        padding-right: 20px;
+        border-right:1px;
+        font-family:serif;
+        font-size:14px;
+        color:rgb(192,179,65);
+     }
+     /*下面三段白色矩形*/
+     .short.essay{/*第一个*/
+        width: 670px;
+        height: 130px;
+        padding: 15px;
+        margin-top: 20px;
+        background-color: #fff;
+        border-top-right-radius: 6px;
+        border-top-left-radius:6px;
+        border-bottom-left-radius:6px;
+        border-bottom-right-radius:6px;
+     }
+     .short.essay01{/*第二个*/
+        width: 670px;
+        height: 130px;
+        padding: 15px;
+        margin-top: 20px;
+        background-color: #fff;
+        border-top-right-radius: 6px;
+        border-top-left-radius:6px;
+        border-bottom-left-radius:6px;
+        border-bottom-right-radius:6px;
+    }
+.short.essay02{/*第三个*/
+        width: 670px;
+        height: 130px;
+        padding: 15px;
+        margin-top: 20px;
+        background-color: #fff;
+        border-top-right-radius: 6px;
+        border-top-left-radius:6px;
+        border-bottom-left-radius:6px;
+        border-bottom-right-radius:6px;
+    }
+.short>li>em>img{/*设置三个白色矩形中的图片大小与角度*/
+    position: relative;
+    left: 510px;
+    top: 17px;
+    width:150px;
+    height: 100px;
+    border-radius: 50%;
+}
+.short>li>h3{/*设置三个白色矩形中三号标题*/
+    position: relative;
+    top: -100px;
+    width: 670px;
+    height: 25px;
+}
+.short>li>p{/*设置三个白色矩形中段落*/
+    position: relative;
+    top: -90px;
+    width: 450px;
+    height: 43px;
+    font-size: 18px;
+    font-family: 仿宋;
+}
+.feed-date{
+    width: 670px;
+    height:22px;
+    margin-top: 20px;
+}
+.feed-date>.fd01{/*设置三个白色矩形底部的四个小标题*/
+    position: relative;
+    top: 10px;
+    font-size: 16px;
+    margin-right: 20px;
+    padding-right: 20px;
+    margin-top:20px;
+    border-right:1px;
+    font-family:serif;
+    color:rgb(192,179,65);
+}
+/*独立于文档之外，右边部分*/
+.l-box{
+    position:relative;
+    top: -850px;
+    width: 28%;
+    height: 840px;
+    background-color: transparent;
+    float: right;
+}
+      /*好友记录*/
+.l-box>.hyjl{
+    width: 280px;
+    height: 220px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius:6px;
+}   
+/*2号标题*/
+.l-box>.hyjl>h2{
+    position: relative;
+    top: 10px;
+    font-size: 16px;
+    width: 280px;
+    height: 34px;
+    margin-left: 10px;
+    color: rgb(53, 85, 131);
+}
+.content{
+    position: relative;
+    left: 3px;
+    float: left;
+    margin:2px;
+}
+ /*是好友记录里面的图片边角圆润一些*/
+.content>img{
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius:6px;
+}
+/*搜索栏*/
+#searchfrom{
+    position: relative;
+    top: 30px;
+    left: 4px;
+    width: 200px;
+    height: 36px;
+    margin-bottom:20px;
+}
+
+
+/*}我的小说*/
+.tuijian{
+    background-color: #fff;
+    width: 280px;
+    height: 270px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius:6px;
+}
+/*标题*/
+.tuijian>h2{
+    position: relative;
+    top: 10px;
+    font-size: 16px;
+    width: 280px;
+    height: 34px;
+    margin-left: 10px;
+    color: rgb(53, 85, 131);
+}
+/*小说名称*/
+.tuijian>ul>li{
+    position: relative;
+    top: 10px;
+    margin-left:30px;
+    margin-bottom: 10px;
+    font-family: serif;
+    list-style: circle;
+}
+/*分类*/
+#fenlei{
+    width: 280px;
+    height: 255px;
+    background-color: #fff;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+/*标题：分类*/
+#fenlei>h2{
+    position: relative;
+    top: 10px;
+    font-size: 16px;
+    margin-left: 10px;
+    color:  rgb(53, 85, 131);
+}
+#fenlei>ul>li{
+    position: relative;
+    top: 25px;
+    list-style: circle;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+/*搜索按钮*/
+.submit1{
+    position: relative;
+    right: 4px;
+    top: 30px;
+    width: 68px;
+    height: 40px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: rgb(79, 148, 247);
+    border-color:transparent;
+    margin-bottom: 20px;
+}
+
+/*微记录*/
+
+.r_box{
+    position:relative;
+    top: -800px;
+    left: 215px;
+    width: 28%;
+    height: 840px;
+    background-color: transparent;
+    float: right;
+}
+      /*好友记录*/
+.r_box>.wjl{
+    width: 280px;
+    height: 220px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius:6px;
+}   
+/*2号标题*/
+.r_box>.wjl>h2{
+    position: relative;
+    top: 10px;
+    font-size: 16px;
+    width: 280px;
+    height: 34px;
+    margin-left: 10px;
+    color: rgb(53, 85, 131);
+}
+.content1{
+    position: relative;
+    left: 3px;
+    float: left;
+    margin:2px;
+}
+ /*是好友记录里面的图片边角圆润一些*/
+.content1>img{
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius:6px;
+}
+/*搜索栏*/
+#searchfrom.w{
+    position: relative;
+    top: 30px;
+    left: 4px;
+    width: 200px;
+    height: 36px;
+    margin-bottom:20px;
+}
+
+/*}我的小说*/
+.tuijian.w{
+    position: relative;
+    top: -8px;
+    background-color: #fff;
+    width: 280px;
+    height: 270px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius:6px;
+}
+/*标题*/
+.tuijian.w>h2{
+    position: relative;
+    top: 10px;
+    font-size: 16px;
+    width: 280px;
+    height: 34px;
+    margin-left: 10px;
+    color: rgb(53, 85, 131);
+}
+/*小说名称*/
+.tuijian.w>ul>li{
+    position: relative;
+    top: 10px;
+    margin-left:30px;
+    margin-bottom: 10px;
+    font-family: serif;
+    list-style: circle;
+}
+/*分类*/
+#fenlei1{
+    position: relative;
+    top: -27px;
+    background-color: #fff;    
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius:6px;
+    width: 280px;
+    height: 240px;
+}
+/*标题*/
+#fenlei1>h2{
+    position: relative;
+    top: 10px;
+    font-size: 16px;
+    width: 280px;
+    height: 34px;
+    margin-left: 10px;
+    color: rgb(53, 85, 131);
+}
+#fenlei1>ul>li{
+    margin-bottom: 10px;
+    margin-left:30px;
+    font-family: serif;
+    list-style: circle;
+}
+
+/*微记录左边部分*/
+ .hezi{
+        width: 700px;
+        height: 800px;
+
+    }
+    /*第一个白色方块，介绍自己的*/
+
+    .xhz{/*一个盒子*/
+        width: 700px;
+        height: 800px;
+        border-top-right-radius: 6px;
+        border-top-left-radius:6px;
+        border-bottom-left-radius:6px;
+        border-bottom-right-radius:6px;
+        background-color: #fff;
+    }
+     article>.hezi>.xhz>h1{/*标题：个人博客，属于我的小世界*/
+        position: relative;
+        top: 25px;
+        left: -70px;
+        font-family:serif;
+     }
+     .hezi>.xhz>div>ul>li{   /*四个小标签*/
+        position:relative;
+        top: 50px;
+        left: -70px;
+        margin-right:20px;
+        padding-right: 20px;
+        float: left;
+        color: #464547;
+        font-size: 18px;
+        font-family:serif;
+     }
+.jilu{
+    position: relative;    /* 第一段文字记录*/
+    top: 70px;
+    width:630px;
+    margin: 20px;
+    padding:10px;
+    font-size:18px;
+    font-family: serif;
+}
+.introduction{             /*第二段文字记录*/
+    position: relative;
+    top:80px;
+    width:630px;
+    margin-left: 20px;
+    padding:10px;
+    font-size:18px;
+    font-family: serif;
+    text-indent:2em;
+    font-weight: bold;
+    background-color:#efefef;
+}
+.cha{                      /*第三段文字记录*/
+    position: relative;
+    top:100px;
+    width:630px;
+    margin-left: 20px;
+    padding:10px;
+    font-size:18px;
+    font-family: serif;
+    text-indent:2em;
+}
+.bottom{                 /* 第四段  底部文字*/
+    position: relative; 
+    top:100px;
+    width:630px;
+    margin-left: 20px;
+    padding:10px;
+    font-size:30px;
+    font-family: bold;
+    text-indent:2em;
+}
+
+
+
+
+/*我的小说右边在文档外部的内容。部分是主内容*/
+
+.l_box{
+    position:relative;
+    top: -800px;
+    left: 0px;
+    width: 28%;
+    height: 840px;
+    background-color: transparent;
+    float: right;
+}
+      /*好友记录*/
+.l_box>.wjl{
+    width: 280px;
+    height: 220px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius:6px;
+}   
+/*2号标题*/
+.l_box>.wjl>h2{
+    position: relative;
+    top: 10px;
+    font-size: 16px;
+    width: 280px;
+    height: 34px;
+    margin-left: 10px;
+    color: rgb(53, 85, 131);
+}
+/*相册图片*/
+.photo.album{
+    width: 700px;
+}
+.xhz>.photo.album>ul>li{
+    position: relative;
+    top:80px;
+    left:-20px;
+    float: left;
+}
+.xhz>.photo.album1>ul>li{
+    position: relative;
+    top:80px;
+    left: 83px;
+    float: left;
+}
+/*相册图片*/
+
+/*日历部分*/
+.calendar{
+    position: relative;
+    top: -1350px;
+    left: 21px;
+}
+.calendar1{
+    position: relative;
+    top: 750px;
+    left: 170px;
+    width: 400px;
+    background-color: transparent;
+    font-size: +3;
+}
+
+
+/*留言专属部分*/
+.lybox{
+	   	position: absolute;
+	   	top: 60px;
+	   	left: 19px;
+	   	width:660px;
+	   	height: 720px; 
+	   	background-color:transparent;
+	   }
+	   .lybox1{
+	   	width: 660px;
+	   	height: 152px;
+	   }
+	   .box-content-img{
+	   	width:60px;
+	   	height:70px;
+	   }
+	   .box-img{
+	   	width: 60px;
+	   	height: 70px;
+	   }
+	   .ly-box-ly{
+	   	position:relative;
+	   	top:-70px;
+	   	left:70px;
+	   	width:580px;
+	   	height:150px;
+	   }
+	   .ly-box-ly-content{
+        width:580px;
+        height:150px;
+	   }
+	   .textarea{
+	   	width:580px;
+	   	height:110px;
+	   	background-color:transparent;
+	   	border-top-right-radius:6px;
+	   	border-top-left-radius:6px;
+	   }
+	   .ly-box-ly-content-info{
+        position:relative;
+        top:-6px;
+	   	width:580px;
+	   	height:36px;
+	   	background-color:transparent;
+        border-bottom:1px solid;
+        border-right:1px solid;
+        border-left:1px solid;
+        border-color:#888;
+	   	border-bottom-left-radius:6px;
+	   	border-bottom-right-radius:6px;
+	   }
+       .submit{
+        position:relative;
+        top:0px;
+        left:380px;
+        width:60px;
+        height:36px;
+        font-size:18px;
+        background-color:transparent;
+        color:#888;
+       }
+       .pj{
+        position:relative;
+        left:30px;
+        margin-right:20px;
+        font-size:16px;
+        font-family:微软雅黑;
+       }
+       .hot-list-box{/*留言大方格 过去、现在、未来*/
+        width:620px;
+        height:340px;
+        margin-top:25px;
+        margin-bottom:25px;
+        padding-left:15px;
+        padding-right:15px;
+        padding:15px;
+        border:1px solid #ccc;
+        border-top-right-radius:6px;
+        border-top-left-radius:6px;
+        border-bottom-right-radius:6px;
+        border-bottom-left-radius:6px;
+       }
+       .title{/*置顶评论*/
+        font-size:18px;
+        font-family:宋体;
+        font-weight:lighter;
+       }
+       .comment-list{ /*包括过去的大方格*/
+        width:620px;
+        height:277;
+        margin-top:10px;
+        margin-bottom:10px;
+       }
+       .comment-text-warp{ /*包括过去的大方格*/
+        width:600px;
+        height:79px;
+        padding-right:5px;
+        padding-bottom:5px;
+        padding-top:10px;
+        border-top:1px solid #ccc;
+        }
+       .user-head{  /*包括 过去 的头像框*/
+        width:50px;
+        height:50px;
+        margin-right:10px;
+       }
+       .user-head img{  /*过去头像图片*/
+        width:50px;
+        height:50px;
+        margin-right:10px;
+        border-top-right-radius:6px;
+        border-top-left-radius:6px;
+        border-bottom-left-radius:6px;
+        border-bottom-right-radius:6px;
+       }
+       .comment-text-box{  /*包括文字的边框*/
+        position:relative;
+        top:-50px;
+        left:55px;
+        width:550px;
+        height:65px;
+        background:transparent;
+       }
+       .comment{   /*标题 ：过去*/
+        color:#f40;
+        margin-bottom:5px;
+       }
+       .comment-text{   /* 文字段落*/
+            font-family:隶书;
+            color:#000;
+            font-size:16px;
+            margin-bottom:5px;
+       }
+       .comment-rq{ /*日期*/
+        color:#aaa;
+        font-style:italic;
+       }
+       .bottom-comment{     /*一个大盒子，包括底部的评论*/
+       	width:650px;
+       	height:100px;
+       	background-color:transparent;
+       	padding-top:5px;
+       	padding-left:5px;
+       }
+       .buttom-comment-words{     /*包括底部的这个评论*/
+       	width:640px;
+       	height:100px;
+       	border-bottom:1px solid #ccc;
+       }
+       .bottom-comment-head-portrait{   /*头像的外框*/
+       	width:50px;
+       	height:50px;
+       }
+        .bottom-comment-head-portrait img{  /*头像*/
+       	width:50px;
+       	height:50px;
+       }
+       .bottom-comment-text{     /*文字部分*/
+       	position:relative;
+       	top:-50px;
+       	left:55px;
+       }
+       .bottom-comment-title{     /*标题*/
+       	color:#f40;
+       	margin-bottom:5px;
+       }
+       .bottom-comment-content{   /*文本修饰*/
+       	    font-family:隶书;
+            color:#000;
+            font-size:16px;
+            margin-bottom:5px;
+       }
+
+/*导航栏部分字体超链接部分变白*/
+       .words li a{
+       	color:#fff;
+       }
+       .words li a:hover{
+       	color:#f5b24d;
+       }
+       /*导航栏悬停变色*/
+       .words li:hover{
+       	background-color:#009ad6;
+       } 

@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+.navbar{
+	border-radius: 0;
+}
+
+.navbar-default{
+	background: #75abff;
+}
+.navbar-default .navbar-nav li a{
+	color: #fff;
+}
+
+.navbar-default .navbar-nav li.list:hover{
+	background: #388fff;
+	
+}
+.navbar-default .navbar-nav li.list:hover a{
+	color: #fff;
+}
+
+section .jumbotron{
+	padding: 20px 60px 48px 60px;
+}
+section .jumbotron .tit{
+	padding: 20px 0;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+
+.panel-heading{
+	background: #75abff !important;
+	color: #fff !important;
+	
+}
+.panel-heading:hover{
+	text-decoration: none;
+	cursor: pointer;
+}
+.panel-body .mar{
+	margin: 5px 0 0 0;
+}
+.panel-body .mar .mar-Post{
+	font-size: 12px;
+}
+
+.app{
+	display: inline-block;
+	padding: 5px;
+	margin: 5px 0 5px 0;
+	border: 1px solid green;
+	color: green;
+	font-size: 12px;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+
+.footer{
+	background: #041e47;
+	padding: 30px 0 30px 0;
+}
+.footer .con-box{
+	color: #fff;
+}
+.footer .con{
+	margin-top: 20px;
+}
+.footer .con-box .con :last-child{
+	margin-bottom: 20px;
+}
+.footer .con-box p{
+	margin-top: 20px;
+	font-size: 16px;
+	color: #ccc;
+}
+.footer .con-box h2{
+	font-size: 20px;
+}
+
+.footer .con-box .mar-in{
+	margin-top: 10px;
+}
+.footer .con-box .message{
+	margin-top: 10px;
+}
+.name-mail{
+	margin-top: 10px;
+}

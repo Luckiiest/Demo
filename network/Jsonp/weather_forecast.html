@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天气预报</title>
+    <style>
+        * {
+    		margin: 0;
+    		padding: 0;
+    		list-style: none;
+    		text-decoration: none;
+    	}
+    	.wrap {
+    		width: 900px;
+    		/*border: 2px solid #38f;*/s
+    		border-radius: 6px;
+    		margin: 100px auto;
+    	}
+    	.wrap::after {
+    		content: '';
+    		display: block;
+    		clear: both;
+    	}
+    	.wrap h2 {
+    		width: 100%;
+    		height: 30px;
+    		font-size: 22px;
+    		text-align: center;
+    	}
+    	.wrap ul li {
+    		float: left;
+    		width: 150px;
+    		height: 310px;
+    		border: 1px solid #f90;
+    		padding: 10px;
+    		box-sizing: border-box;
+    	}
+    	.wrap li .date {
+    		text-align: center;
+    		margin:5px 0 5px 0;
+    	}
+    	.wrap li span {
+    		display: block;
+    		font-size: 14px;
+    		color: #595959;
+    	}
+    	.wrap li span.bor,
+    	.wrap li .ganmao{
+    		border-bottom: 1px solid #ccc;
+    		margin-top: 8px;
+    	}
+    	.weather-list {
+    		margin-top: 10px;
+    	}
+    	.wrap ul li .type,
+    	.wrap ul li .wendu,
+    	.wrap ul li .high,
+    	.wrap ul li .low {
+    		font-weight: bold;
+    	}
+    	.wrap ul li .wendu {
+    		color: #f40;
+    	}
+
+
+    	.inp-search {
+    		width: 990px;
+    		margin: 0 auto;
+    	}
+    	.inp-search::after {
+    		content: '';
+    		display: block;
+    		clear: both;
+    	}
+    	.inp-search .inp {
+    		float: left;
+    		width: 910px;
+    		height: 36px;
+    		border: 2px solid #f40;
+    		overflow: hidden;
+    		border-top-left-radius: 25px;
+    		border-bottom-left-radius: 25px;
+    	}
+    	.inp-search .inp input {
+    		width: 100%;
+    		height: 100%;
+    		outline: none;
+    		border: none;
+    		padding: 5px 0;
+    		text-indent: 2em;
+    		box-sizing: border-box;
+    	}
+    	.inp-search .search {
+    		float: left;
+    		width: 70px;
+    		height: 40px;
+    		border-top-right-radius: 25px;
+    		border-bottom-right-radius: 25px;
+    		overflow: hidden;
+    	}
+    	.inp-search .search button {
+		    font-size: 18px;
+		    font-weight: 700;
+		    color: #FFF;
+		    background-color: #FF4200;
+		    cursor: pointer;
+		    height: 100%;
+		    border: none;
+		    width: 100%;
+    	}
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div class="inp-search">
+            <div class="inp">
+                <input type="text" placeholder="输入城市名，查询天气">
+            </div>
+            <div class="search">
+                <button>查询</button>
+            </div>
+        </div>
+    </form>
+    <div class="wrap">
+        <ul>
+            <!-- <li>
+            	<span class="adress">北京</span>
+				<h3 class="date">8日星期一</h3>
+                <div class="weather-list">
+                	<span class="bor type">天气：晴</span>
+               	 	<span class="bor wendu">现在温度：8°C</span>
+                    <span class="bor high">高温：10°C</span>
+                    <span class="bor low">低温：1°C</span>
+                    <span class="bor fengli">风级：1级</span>
+                    <span class="bor fengxiang">风向：南风</span>
+                </div>
+                <span class="bor ganmao">"感冒多发期，适当减少外出频率，适量补充水分，适当增减衣物。"</span>
+            </li> -->
+        </ul>
+    </div>
+    <script>
+    var oInput = document.getElementsByTagName('input')[0],
+        oBtn = document.getElementsByTagName('button')[0],
+        oWrap = document.getElementsByClassName('wrap')[0],
+        oUl = document.getElementsByTagName('ul')[0];
+
+
+    // 获取天气预报接口
+    oBtn.onclick = function(e) {
+        e.preventDefault();
+        var Value = oInput.value;
+        var oScript = document.createElement('script');
+        oScript.src = "http://wthrcdn.etouch.cn/weather_mini?city=" + Value + "&callback=weather"
+        document.body.appendChild(oScript);
+        document.body.removeChild(oScript);
+    }
+
+    function weather(data) {
+        console.log(data);
+        var str = '';
+        // 选中对象中含有数据的对象
+        var dataList = data.data;
+        // console.log(dataList);
+        // 循环六次，创建六个DOM，因为接口里面有六个天气天数
+        for (var i = 0; i < 6; i++) {
+        	// 第一个是昨天
+            if (i < 1) {
+            	// 昨天的天气属性在dataList中yesterday这个对象当中
+                str += `<li>
+					<h3 class="date">${dataList.yesterday.date}</h3>
+		            <div class="weather-list">
+		            	<span class="bor type">天气：${dataList.yesterday.type}</span>
+		                <span class="bor high">${dataList.yesterday.high}</span>
+		                <span class="bor low">${dataList.yesterday.low}</span>
+		                <span class="bor fengli">风级：${dataList.yesterday.fl}</span>
+		                <span class="bor fengxiang">风向：${dataList.yesterday.fx}</span>
+		            </div>`
+		        // 第二个就是当天，有一些其他天数没有的属性
+            } else if (i > 0 && i < 2) {
+            	// 除了昨天，其他的天数都在forecast数组当中
+                str += `<li>
+		        	<span class="adress">${dataList.city}</span>
+					<h3 class="date">${dataList.forecast[i-1].date}</h3>
+		            <div class="weather-list">
+		            	<span class="bor type">当前天气：${dataList.forecast[i-1].type}</span>
+		           	 	<span class="bor wendu">当前温度：${dataList.wendu}</span>
+		                <span class="bor high">${dataList.forecast[i-1].high}</span>
+		                <span class="bor low">${dataList.forecast[i-1].low}</span>
+		                <span class="bor fengxiang">风向：${dataList.forecast[i-1].fengxiang}</span>
+		            </div>
+		            <span class="ganmao">${dataList.ganmao}</span>
+		        </li>`
+		    // 未来几天的天气
+            } else {
+                str += `<li>
+		        	<span class="adress">${dataList.city}</span>
+					<h3 class="date">${dataList.forecast[i-1].date}</h3>
+		            <div class="weather-list">
+		            	<span class="bor type">天气：${dataList.forecast[i-1].type}</span>
+		                <span class="bor high">${dataList.forecast[i-1].high}</span>
+		                <span class="bor low">${dataList.forecast[i-1].low}</span>
+		                <span class="bor fengxiang">风向：${dataList.forecast[i-1].fengxiang}</span>
+		            </div>
+		        </li>`
+            }
+        }
+        oUl.innerHTML = str;
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>    
+
+        //class 关键字，不可以var、let，它是一个语法糖，本质还是function
+
+        //使用class类，相当于Es5的构造函数，不用写function
+        //私有属性constructor
+        //公有属性(原型属性) 
+        //静态属性(函数本身属性)
+        class Plane {
+            //静态属性,ES6不支持非方法的静态属性，ES7支持
+            //静态属性在Plane中定义时，它就成为了Plane本身的方法
+            static alive () {
+                return true;
+            }
+            //私有属性
+            constructor (name) {
+                this.name = name || '普通飞机';
+                this.blood = 100;
+            }
+            //如果想给原型添加方法，则在constructor的同级下添加函数
+            fly () {
+                console.log('fly');
+            }
+            //ES7 私有属性
+            // name = 10;
+        }
+
+        //target extend origin：target的prototype继承Plane的prototype
+        class AttackPlane extends Plane{
+            constructor (name) {
+                // Plane.call(this,name);
+                super(name);
+                //super就相当于把Plane的私有属性call了一下，将私有属性全部call到了constructor中
+                this.logo = 'l';
+            }
+            //公有属性
+            dan () {
+                console.log('biubiubiu');
+            }
+        }
+
+        oAp = new AttackPlane('战斗机');
+        
+        
+        // ES5
+
+        // 1.must be new
+        // 2.class Plane.prototype 不能枚举
+        // 3.静态属性要放到Plane函数上，非原型
+
+    </script>
+    
+</body>
+</html>

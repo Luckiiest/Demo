@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mobile Objects Cookie Storage</title>
+        <style>
+            div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div></div>
+        <script>
+            var oDiv = document.getElementsByTagName('div')[0];
+
+            var manageCookie = {
+                // 创建Cookie，name为名字，value是内容，time是时间，path是路径
+                setCookie: function (name, value, time, path) {
+                    document.cookie = name + '=' + value + ';max-age=' + time + ';path=' + path;
+                    // 返回this让它可以链式调用
+                    return this;
+                },
+                // 删除cookie，name就是要删除的cookie的name
+                removeCookie: function (name) {
+                    // 返回this让它可以链式调用
+                    // 借用setCookie函数直接删除
+                    return this.setCookie(name, '', -1);
+                },
+                // 查找cookie，name是名字,callback是回调函数（处理最后返回来的数据）
+                getCookie: function (name, callback) {
+                    // console.log(allCookieArr);
+                    // 把cookie字符串按照 ;+空格 拆分
+                    var allCookieArr = document.cookie.split('; ');
+                    // 循环遍历数组allCookieArr
+                    for (var i = 0; i < allCookieArr.length; i++) {
+                        // console.log(itemCookieArr); 把已经变成数组的cookie字符串按照 =（等于号）拆分成一个一个的数组
+                        var itemCookieArr = allCookieArr[i].split('=');
+                        // 如果itemCookieArr的第0位等于我输入的name值
+                        if (itemCookieArr[0] == name) {
+                            callback(itemCookieArr[1]);
+                            // 如果找到了就返回this
+                            return this;
+                        }
+                    }
+                    // 如果找不到cookie的name值，就返回一个undefined
+                    callback(undefined);
+                    // 返回一个this让它可以链式调用
+                    return this;
+                },
+            };
+
+            // drag是拖拽对象的一个对象
+            var drag = {
+                // init函数是用来启动所有的函数
+                init: function (dom) {
+                    this.dom = dom;
+                    var that = this;
+                    // 执行bildEvenet函数
+                    this.blindEvent();
+                    // 让cookie的值取到this.dom的left和top中取，打开页面还是原来的位置
+                    manageCookie
+                        .getCookie('newLeft', function (data) {
+                            that.dom.style.left = data + 'px';
+                        })
+                        .getCookie('newTop', function (data) {
+                            that.dom.style.top = data + 'px';
+                        });
+                },
+                // 绑定点击时间
+                blindEvent: function () {
+                    this.dom.onmousedown = this.mouseDown.bind(this);
+                },
+                // 在点击函数中绑定移动事件和up事件
+                mouseDown: function (e) {
+                    var e = e || window.event;
+                    document.onmousemove = this.mouseMove.bind(this);
+                    document.onmouseup = this.mouseUp.bind(this);
+
+                    // this.disX 鼠标所在的点和距离页面顶端重合的位置
+                    // e.clientX就是鼠标所在的位置
+                    // this.dom.offsetLeft 就是鼠标所在的位置距离页面顶端的值
+                    this.disX = e.clientX - this.dom.offsetLeft;
+                    this.disY = e.clientY - this.dom.offsetTop;
+                },
+                mouseMove: function (e) {
+                    var e = e || window.event;
+                    // this.newLeft就是现在的位置
+                    // e.clientX：移动过后的鼠标的点
+                    // disX 刚才所在的位置
+                    // 用现在所在的位置减去刚才所在的位置就得出了需要移动的距离
+                    this.newLeft = e.clientX - this.disX;
+                    this.newTop = e.clientY - this.disY;
+
+                    this.dom.style.left = this.newLeft + 'px';
+                    this.dom.style.top = this.newTop + 'px';
+                },
+                // 当鼠标放开时全部事件为null
+                mouseUp: function () {
+                    document.onmousemove = null;
+                    document.onmouseup = null;
+                    // 当鼠标放开的时候把newLeft/newTop值存储Cookie值中
+                    manageCookie
+                        .setCookie('newLeft', this.newLeft, 10000)
+                        .setCookie('newTop', this.newTop, 10000);
+                },
+            };
+            drag.init(oDiv);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+} 
+
+html,
+body,
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background:black;
+	color: #fff
+}
+
+.wrapper .content {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	height: 80%;
+	/*弹性盒子的垂直居中排列*/
+	align-items: center;
+}
+
+.wrapper .item {
+	width: 16%;
+	height: 100%;
+	border-radius: 20px;
+	background:#000;
+	overflow: hidden;
+	transition: height .5s linear .5s,width .5s linear;
+}
+
+.wrapper-active .item {
+	transition: height .5s linear,width .5s linear .5s;
+}
+
+/*点击之后是active的宽度变为100%*/
+.wrapper .active {
+	width: 100%;
+}
+
+/*点击之后所有不是active的div宽度和高度变为0*/
+.wrapper-active .item:not(.active) {
+	width: 0%;
+	height: 0%;
+}
+
+.wrapper .item .inner {
+	position:relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+	transition: transform 0.5s linear;
+}
+
+/*给不同的inner添加延迟*/
+.wrapper .item:nth-of-type(2) .inner {
+	transition-delay: .1s;
+}
+.wrapper .item:nth-of-type(3) .inner {
+	transition-delay: .2s;
+}
+.wrapper .item:nth-of-type(4) .inner {
+	transition-delay: .3s;
+}
+.wrapper .item:nth-of-type(5) .inner {
+	transition-delay: .4s;
+}
+.wrapper .item:nth-of-type(6) .inner {
+	transition-delay: .5s;
+}
+
+.init .item .inner{
+	transform: translate3d(0,100%,0);
+}
+
+.wrapper .item .bg {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	opacity: .7;
+}
+
+.wrapper .item:nth-of-type(1) .bg{
+	background-image: url(../img/1.jpg);
+}
+.wrapper .item:nth-of-type(2) .bg{
+	background-image: url(../img/2.jpg);
+}
+.wrapper .item:nth-of-type(3) .bg{
+	background-image: url(../img/3.jpg);
+}
+.wrapper .item:nth-of-type(4) .bg{
+	background-image: url(../img/4.jpg);
+}
+.wrapper .item:nth-of-type(5) .bg{
+	background-image: url(../img/5.jpg);
+}
+.wrapper .item:nth-of-type(6) .bg{
+	background-image: url(../img/6.jpg);
+}
+
+
+.wrapper .item .title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition: opacity .2s linear 1s;
+}
+
+.wrapper-active .item .title {
+	opacity: 0;
+	transition: opacity .2s linear;
+}
+
+.wrapper .item .title h2 {
+	font-size: 14px;
+	transition: font-size .3s linear;
+}
+
+.wrapper .item:hover .title h2 {
+	font-size: 20px;
+}
+
+.wrapper .item:hover .bg{
+	opacity: 1;
+}
+
+.wrapper .item .inner .dis {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 30px;
+	font-size: 12px;
+	margin-top: 10px;
+	opacity: 0;
+}
+
+.wrapper-active .item .inner .dis {
+	opacity: 1;
+	transition: opacity .2s linear 1s;
+}
+
+.wrapper .item .inner .dis .header {
+	float: left;
+	margin-left: 30px;
+	line-height: 30px;
+}
+
+.wrapper .item .inner .dis .close {
+	position: relative;
+	float: right;
+	width: 30px;
+	height: 30px;
+	margin-right: 30px;
+}
+
+.wrapper .item .inner .dis .close::before,
+.wrapper .item .inner .dis .close::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 30px;
+	height: 2px;
+	margin-top: -1px;
+	background:#fff;
+}
+
+
+.wrapper .item .inner .dis .close::before {
+	transform: rotate(45deg);
+}
+.wrapper .item .inner .dis .close::after {
+	transform: rotate(-45deg);
+}

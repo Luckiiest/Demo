@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>经 销 商</title>
+    <link rel="stylesheet" href="css/Distributor.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+
+
+    
+
+    <div class="banner">
+        <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="image/D-ban.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                    <img src="image/D-ban1.jpg" alt="Second slide">
+                </div>
+                <div class="item">
+                    <img src="image/D-ban2.jpg" alt="Third slide">
+                </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <header id="header">
+                <div class="head">
+                    <h2 class="tit">汽车之家</h2>
+                    <nav class="nav">
+                            <ul>
+                                <li class="nav_1">
+                                    <a href="index.html" class="nav_a">首页</a>
+                                    <div id="nav_box">
+                                        <ul>
+                                            <li>
+                                                <span class="bg"></span>
+                                                <a href="#" class="nav_b">技术</a>
+                                            </li>
+                                            <li>
+                                                <span class="bg-2"></span>
+                                                <a href="#" class="nav_b">服务</a>
+                                            </li>
+                                            <li>
+                                                <span class="bg-3"></span>
+                                                <a href="#" class="nav_b">售后</a>
+                                            </li>
+                                            <li>
+                                                <span class="bg-4"></span>
+                                                <a href="#" class="nav_b">百科</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav_1">
+                                    <a href="Customized.html" class="nav_a">订购新车</a>
+                                    <div id="nav_box">
+                                        <ul>
+                                            <li>
+                                                <span class="bg"></span>
+                                                <a href="#" class="nav_b">技术</a>
+                                            </li>
+                                            <li>
+                                                <span class="bg-2"></span>
+                                                <a href="#" class="nav_b">服务</a>
+                                            </li>
+                                            <li>
+                                                <span class="bg-3"></span>
+                                                <a href="#" class="nav_b">售后</a>
+                                            </li>
+                                            <li>
+                                                <span class="bg-4"></span>
+                                                <a href="#" class="nav_b">百科</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav_1">
+                                    <a href="Vehicleproducts.html" class="nav_a">优选车品</a>
+                                    <div id="nav_box">
+                                        <ul>
+                                            <li>
+                                                <span class="bg"></span>
+                                                <a href="#" class="nav_b">技术</a>
+                                            </li>
+                                            <li>
+                                                <span class="bg-2"></span>
+                                                <a href="#" class="nav_b">服务</a>
+                                            </li>
+                                            <li>
+                                                <span class="bg-3"></span>
+                                                <a href="#" class="nav_b">售后</a>
+                                            </li>
+                                            <li>
+                                                <span class="bg-4"></span>
+                                                <a href="#" class="nav_b">百科</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav_1">
+                                    <a href="second-hand.html" class="nav_a">二手车</a>
+                                    <div id="nav_box">
+                                        <ul>
+                                            <li>
+                                                <span class="bg"></span>
+                                                <a href="#" class="nav_b">技术</a>
+                                            </li>
+                                            <li>
+                                                <span class="bg-2"></span>
+                                                <a href="#" class="nav_b">服务</a>
+                                            </li>
+                                            <li>
+                                                <span class="bg-3"></span>
+                                                <a href="#" class="nav_b">售后</a>
+                                            </li>
+                                            <li>
+                                                <span class="bg-4"></span>
+                                                <a href="#" class="nav_b">百科</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav_1">
+                                    <a href="Distributor.html" class="nav_a">经销商</a>
+                                    <div id="nav_box">
+                                        <ul>
+                                            <li>
+                                                <span class="bg"></span>
+                                                <a href="#" class="nav_b">技术</a>
+                                            </li>
+                                            <li>
+                                                <span class="bg-2"></span>
+                                                <a href="#" class="nav_b">服务</a>
+                                            </li>
+                                            <li>
+                                                <span class="bg-3"></span>
+                                                <a href="#" class="nav_b">售后</a>
+                                            </li>
+                                            <li>
+                                                <span class="bg-4"></span>
+                                                <a href="#" class="nav_b">百科</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav_1">
+                                    <a href="about.html" class="nav_a">关于我们</a>
+                                    <div id="nav_box">
+                                        <ul>
+                                            <li>
+                                                <span class="bg"></span>
+                                                <a href="#" class="nav_b">技术</a>
+                                            </li>
+                                            <li>
+                                                <span class="bg-2"></span>
+                                                <a href="#" class="nav_b">服务</a>
+                                            </li>
+                                            <li>
+                                                <span class="bg-3"></span>
+                                                <a href="#" class="nav_b">售后</a>
+                                            </li>
+                                            <li>
+                                                <span class="bg-4"></span>
+                                                <a href="#" class="nav_b">百科</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                    </nav>
+                </div>
+            </header>
+    </div>
+
+    <div class="search">
+        <div class="search-box">
+            <div class="right">
+                <input type="text" name="Search-for-cars" placeholder="车品 / 品牌 / 经销商 / 车辆 / 布加迪威龙 / 法拉利 / 五菱宏光">
+                <img src="image/search-fdj.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <main id="container">
+        <div class="container">
+            <section class="index">
+                <span avalon-events="click:eclick_0_toIndex">首页 &gt; </span>
+                <span>经销商列表</span>
+            </section>
+
+            <div>
+                <!--城市-->
+                <section class="city">
+                    <span class="label" style="margin-top: 6px">城市：</span>
+                    <select class="choice-province" avalon-events="change:_6">
+                        <option value="-1">请选择省份</option>
+                        <option value="">北京市</option>
+                        <option value="">天津市</option>
+                        <option value="">河北省</option>
+                        <option value="">山西省</option>
+                        <option value="">内蒙古自治区</option>
+                        <option value="">辽宁省</option>
+                        <option value="">吉林省</option>
+                        <option value="">黑龙江省</option>
+                        <option value="">上海市</option>
+                        <option value="">江苏省</option>
+                        <option value="">浙江省</option>
+                        <option value="">福建省</option>
+                        <option value="">江西省</option>
+                        <option value="">山东省</option>
+                        <option value="">河南省</option>
+                        <option value="">湖北省</option>
+                        <option value="">湖南省</option>
+                        <option value="">广东省</option>
+                        <option value="">广西壮族自治区</option>
+                        <option value="">海南省</option>
+                        <option value="">重庆市</option>
+                        <option value="">四川省</option>
+                        <option value="">贵州省</option>
+                        <option value="">云南省</option>
+                        <option value="">西藏自治区</option>
+                        <option value="">陕西省</option>
+                        <option value="">甘肃省</option>
+                        <option value="">青海省</option>
+                    </select>
+                    <select class="choice-city" avalon-events="change:_6">
+                        <option value="-1">请选择城市</option>
+                        <option value="">石家庄市</option>
+                        <option value="">唐山市</option>
+                        <option value="">秦皇岛市</option>
+                        <option value="">邯郸市</option>
+                        <option value="">邢台市</option>
+                        <option value="">保定市</option>
+                        <option value="">张家口市</option>
+                        <option value="">承德市</option>
+                        <option value="">沧州市</option>
+                        <option value="">廊坊市</option>
+                        <option value="">衡水市</option>
+                    </select>
+                </section>
+                <section class="district noBorder">
+                    <span class="label">区域：</span>
+                    <ul class="areaList clearfix">
+                        <li class="active">全部</li>
+                        <li><span class="areaName">长安区(2)</span></li>
+                        <li><span class="areaName">桥西区(1)</span></li>
+                        <li><span class="areaName">裕华区(2)</span></li>
+                        <li><span class="areaName">正定县(1)</span></li>
+                        <li><span class="areaName">辛集市(1)</span></li>
+                        <li><span class="areaName">藁城市(1)</span></li>
+                        <li><span class="areaName">晋州市(1)</span></li>
+                        <li><span class="areaName">鹿泉市(1)</span></li>
+                    </ul>
+                </section>
+                <section class="district district1">
+                    <span class="label">排序：</span>
+                    <ul class="areaList clearfix">
+                        <li class="active">
+                            <span class="default">默认</span>
+                        </li>
+                        <li>
+                            <span class="orderName">
+                                <i class="icon"></i>优惠活动
+                            </span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <section class="list">
+                <div class="switch clearfix">
+                    <div class="left">
+                        <span class="active">列表</span>
+                        <span class="grey">|</span>
+                        <spanclass="changed">地图</span>
+                    </div>
+                    <p class="right">
+                        共有
+                        <span style="color: #d91323">10</span>
+                        家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;根据与您的距离排序展示
+                    </p>
+                </div>
+                <!--店铺-->
+                <ul class="storeList clearfix">
+                    <li avalon-events="click:eclick_0_toInfoPage40item41">
+                        <img class="cover" alt="" src="image/D-c-1.jpg">
+                        <div class="store-info">
+                            <div class="title clearfix">
+                                <p class="storeName" title="河北世纪汽车贸易有限公司">河北世纪汽车贸易有限公司</p>
+                                <p class="score">综合评分：
+                                    <span class="score_val">5.0</span></p>
+                                <span style="position: relative; right: -12px; top: -15px;display: inline-block;">
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                </span>
+                            </div>
+                            <p class="storeAdd" title="河北省石家庄市南二环东路3号">河北省石家庄市南二环东路3号</p>
+                            <p class="storeTel"><span title="0311-86129771">0311-86129771</span>/<span
+                                    title="0311-86129781">0311-86129781</span></p>
+                            <p class="num">104款在售车辆</p>
+                            <p class="sale">新高尔夫GTI欢迎莅临赏鉴 优惠高达4万</p>
+                        </div><img class="lingShou" src="" alt="" style="display: none;">
+                    </li>
+                    <li avalon-events="click:eclick_0_toInfoPage40item41">
+                        <img class="cover" alt="" src="image/D-c-2.jpg">
+                        <div class="store-info">
+                            <div class="title clearfix">
+                                <p class="storeName" title="河北众捷汽车贸易有限公司">河北众捷汽车贸易有限公司</p>
+                                <p class="score">综合评分：
+                                    <span class="score_val">5.0</span></p>
+                                <span style="position: relative; right: -12px; top: -15px;display: inline-block;">
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                </span>
+                            </div>
+                            <p class="storeAdd" title="石家庄市北二环东路86号（国际汽车贸易园区内）">石家庄市北二环东路86号（国际汽车贸易园区内）</p>
+                            <p class="storeTel"><span title="0311-86129771">0311-86129771</span>/<span
+                                    title="0311-86129771/0311-86129781">0311-86129771/0311-86129781</span></p>          
+                            <p class="num">104款在售车辆</p>
+                            <p class="sale">T-ROC探歌售价直降2.48万元 欢迎垂询</p>
+                        </div><img class="lingShou" src="" alt="" style="display: none;">
+                    </li>
+                    <li avalon-events="click:eclick_0_toInfoPage40item41">
+                        <img class="cover" alt="" src="image/D-c-3.jpg">
+                        <div class="store-info">
+                            <div class="title clearfix">
+                                <p class="storeName" title="石家庄晨阳汽车贸易有限公司">石家庄晨阳汽车贸易有限公司</p>
+                                <p class="score">综合评分：
+                                    <span class="score_val">5.0</span></p>
+                                <span style="position: relative; right: -12px; top: -15px;display: inline-block;">
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                </span>
+                            </div>
+                            <p class="storeAdd" title="石家庄市新华区北二环路西路318号">石家庄市新华区北二环路西路318号</p>
+                            <p class="storeTel"><span title="0311-89922508">0311-89922508</span>/<span
+                                    title="0311-86129781">0311-89922508</span></p>
+                            <p class="num">104款在售车辆</p>
+                            <p class="sale">新高尔夫GTI限时优惠 目前优惠高达2.0万元</p>
+                        </div><img class="lingShou" src="" alt="" style="display: none;">
+                    </li>
+                    <li avalon-events="click:eclick_0_toInfoPage40item41">
+                        <img class="cover" alt="" src="image/D-c-4.jpg">
+                        <div class="store-info">
+                            <div class="title clearfix">
+                                <p class="storeName" title="石家庄晨阳和众汽车贸易有限公司">石家庄晨阳和众汽车贸易有限公司</p>
+                                <p class="score">综合评分：
+                                    <span class="score_val">5.0</span></p>
+                                <span style="position: relative; right: -12px; top: -15px;display: inline-block;">
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                </span>
+                            </div>
+                            <p class="storeAdd" title="石家庄市长安区和平东路453号">石家庄市长安区和平东路453号</p>
+                            <p class="storeTel"><span title="0311-89895777">0311-89895777</span>/<span
+                                    title="0311-89895777">0311-89895777</span></p>
+                            <p class="num">104款在售车辆</p>
+                            <p class="sale">新高尔夫GTI钜惠1万元 欢迎赏鉴</p>
+                        </div><img class="lingShou" src="" alt="" style="display: none;">
+                    </li>
+                    <li avalon-events="click:eclick_0_toInfoPage40item41">
+                        <img class="cover" alt="" src="image/D-c-5.jpg">
+                        <div class="store-info">
+                            <div class="title clearfix">
+                                <p class="storeName" title="石家庄市冀中汽车贸易有限公司">石家庄市冀中汽车贸易有限公司</p>
+                                <p class="score">综合评分：
+                                    <span class="score_val">5.0</span></p>
+                                <span style="position: relative; right: -12px; top: -15px;display: inline-block;">
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                </span>
+                            </div>
+                            <p class="storeAdd" title="石家庄市西二环南路188号">石家庄市西二环南路188号</p>
+                            <p class="storeTel"><span title="0311-83861699">0311-83861699</span>/<span
+                                    title="0311-83862222">0311-83862222</span></p>
+                            <p class="num">86款在售车辆</p>
+                            <p class="sale">全新一代速腾限时优惠 目前优惠高达2.5万元</p>
+                        </div><img class="lingShou" src="" alt="" style="display: none;">
+                    </li>
+                    <li avalon-events="click:eclick_0_toInfoPage40item41">
+                        <img class="cover" alt="" src="image/D-c-6.jpg">
+                        <div class="store-info">
+                            <div class="title clearfix">
+                                <p class="storeName" title="河北奥吉通祥瑞汽车销售有限公司">河北奥吉通祥瑞汽车销售有限公司</p>
+                                <p class="score">综合评分：
+                                    <span class="score_val">5.0</span></p>
+                                <span style="position: relative; right: -12px; top: -15px;display: inline-block;">
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                </span>
+                            </div>
+                            <p class="storeAdd" title="石家庄鹿泉区新华路与西三环交口奥吉通园区内">石家庄鹿泉区新华路与西三环交口奥吉通园区内</p>
+                            <p class="storeTel"><span title="0311-83937777">0311-83937777</span>/<span
+                                    title="0311-81550088">0311-81550088</span></p>
+                            <p class="num">101款在售车辆</p>
+                            <p class="sale">新高尔夫热销中 促销优惠高达3.27万元</p>
+                        </div><img class="lingShou" src="" alt="" style="display: none;">
+                    </li>
+                    <li avalon-events="click:eclick_0_toInfoPage40item41">
+                        <img class="cover" alt="" src="image/D-c-7.jpg">
+                        <div class="store-info">
+                            <div class="title clearfix">
+                                <p class="storeName" title="石家庄晨阳详云汽车贸易有限公司">石家庄晨阳详云汽车贸易有限公司</p>
+                                <p class="score">综合评分：
+                                    <span class="score_val">5.0</span></p>
+                                <span style="position: relative; right: -12px; top: -15px;display: inline-block;">
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                </span>
+                            </div>
+                            <p class="storeAdd" title="正定县燕赵大街与107国道交叉口路东南侧">正定县燕赵大街与107国道交叉口路东南侧</p>
+                            <p class="storeTel"><span title="0311-87538777">0311-87538777</span>/
+                                <span title="0311-87539990">0311-87539990</span></p>
+                            <p class="num">104款在售车辆</p>
+                            <p class="sale">全新一代速腾欢迎莅临赏鉴 优惠高达2.58万</p>
+                        </div><img class="lingShou" src="" alt="" style="display: none;">
+                    </li>
+                    <li avalon-events="click:eclick_0_toInfoPage40item41">
+                        <img class="cover" alt="" src="image/D-c-8.jpg">
+                        <div class="store-info">
+                            <div class="title clearfix">
+                                <p class="storeName" title="石家庄晨阳汇众汽车贸易有限公司">石家庄晨阳汇众汽车贸易有限公司</p>
+                                <p class="score">综合评分：
+                                    <span class="score_val">5.0</span></p>
+                                <span style="position: relative; right: -12px; top: -15px;display: inline-block;">
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                </span>
+                            </div>
+                            <p class="storeAdd" title="河北省石家庄市藁城区廉州镇南马村（藁梅路中段路西）">河北省石家庄市藁城区廉州镇南马村（藁梅路中段路西）</p>
+                            <p class="storeTel"><span title="0311-87526777">0311-87526777</span>/<span
+                                    title="0311-87526006">0311-87526006</span></p>
+                            <p class="num">87款在售车辆</p>
+                            <p class="sale">新高尔夫GTI售价直降0万元 欢迎垂询</p>
+                        </div><img class="lingShou" src="" alt="" style="display: none;">
+                    </li>
+                    <li avalon-events="click:eclick_0_toInfoPage40item41">
+                        <img class="cover" alt="" src="image/D-c-9.jpg">
+                        <div class="store-info">
+                            <div class="title clearfix">
+                                <p class="storeName" title="石家庄晨阳博众汽车贸易有限公司">石家庄晨阳博众汽车贸易有限公司</p>
+                                <p class="score">综合评分：
+                                    <span class="score_val">5.0</span></p>
+                                <span style="position: relative; right: -12px; top: -15px;display: inline-block;">
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                </span>
+                            </div>
+                            <p class="storeAdd" title="河北省石家庄晋州市中兴路与东环交叉口西北角">河北省石家庄晋州市中兴路与东环交叉口西北角</p>
+                            <p class="storeTel"><span title="0311-87516066">0311-87516066</span>/<span
+                                    title="0311-87516066">0311-87516066</span></p>
+                            <p class="num">104款在售车辆</p>
+                            <p class="sale">新高尔夫欢迎莅临赏鉴 优惠高达2.16万</p>
+                        </div><img class="lingShou" src="" alt="" style="display: none;">
+                    </li>
+                    <li avalon-events="click:eclick_0_toInfoPage40item41">
+                        <img class="cover" alt="" src="image/D-c-10.jpg">
+                        <div class="store-info">
+                            <div class="title clearfix">
+                                <p class="storeName" title="辛集世纪汽车贸易有限公司">辛集世纪汽车贸易有限公司</p>
+                                <p class="score">综合评分：
+                                    <span class="score_val">5.0</span></p>
+                                <span style="position: relative; right: -12px; top: -15px;display: inline-block;">
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                    <span class="start active"></span>
+                                </span>
+                            </div>
+                            <p class="storeAdd" title="河北省辛集市迎宾路北段西侧">河北省辛集市迎宾路北段西侧</p>
+                            <p class="storeTel"><span title="0311-83256888">0311-83256888</span>/<span
+                                    title="0311-83256888">0311-83256888</span></p>
+                            <p class="num">104款在售车辆</p>
+                            <p class="sale">迈腾限时优惠 目前优惠高达3.28万元</p>
+                        </div><img class="lingShou" src="" alt="" style="display: none;">
+                    </li>
+                </ul>
+            </section>
+            <!-- 侧边栏 -->
+            <div class="rfixed-box">
+                <a href="#" class="fixed-item1">
+                    <i class="icon"></i>
+                    车型
+                </a>
+                <a href="#" class="fixed-item2">
+                    <i class="icon"></i>
+                    保养
+                </a>
+                <a href="#" class="fixed-item3">
+                    <i class="icon"></i>
+                    贷款
+                </a>
+                <a href="#" target="_black" class="fixed-item4">
+                    <i class="icon"></i>
+                    用户反馈</a>
+                <a href="#" class="fixed-item5" avalon-events="click:eclick_0_scrollTop">
+                    <i class="icon"></i>
+                    返回顶部
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer order-footer">
+        <div class="page-width">
+            <ul class="nav footer-show">
+                <li>品质保证</li>
+                <li>信息透明</li>
+                <li>方便快捷</li>
+                <li>认证商家</li>
+                <li>一站式服务</li>
+            </ul>
+            <div class="footer-link clearfix">
+                <dl class="first">
+                    <dt>帮助中心</dt>
+                    <dd><a href="#">平台使用要求</a></dd>
+                    <dd><a href="#">T-ROC限量版</a></dd>
+                </dl>
+                <dl>
+                    <dt>关于我们</dt>
+                    <dd><a href="#">关于商城</a></dd>
+                    <dd><a href="#">在线客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>服务条款</dt>
+                    <dd><a href="#">一汽-大众商城服务条款</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物流程</dt>
+                    <dd><a href="#">如何购物</a></dd>
+                </dl>
+                <div class="float-right more-perfer"> 更多优惠在这里<br>
+                    <img alt="优惠二维码" src="image/er1.gif">
+                    <img alt="优惠二维码" src="image/er2.gif">
+                </div>
+            </div>
+            <p class="links">友情链接：
+                <a href="#" target="_black">一汽-大众官网</a>
+                <a href="#" target="_black">一汽-大众天猫旗舰店</a>
+                <a href="#" target="_black">一汽-大众易车旗舰店</a>
+                <a href="#" target="_black">一汽-大众腾讯商城旗舰店</a>
+            </p>
+            <p class="state">
+                <span>法律声明</span> &nbsp;|&nbsp;
+                <span>一汽-大众汽车有限公司</span> &nbsp;|&nbsp;
+                <span>吉ICP备09000793号</span> &nbsp;|&nbsp;
+                <span>吉公安备22010602000029号</span>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
